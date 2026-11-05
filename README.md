@@ -12,9 +12,43 @@
 
 [![研究广场官网截图](images/research-plaza.png)](images/research-plaza.png)
 
+## 投研台图集
+
 **A 股资金流投研台**　同屏查看增量需求、成交分类、市场广度与融资净买入趋势。图中数据截至 2026 年 11 月 4 日。
 
 [![A 股资金流投研台官网截图](images/market-monitor.png)](images/market-monitor.png)
+
+### 公募抱团
+
+把拥挤度分组收益曲线和抱团地图放在一起看：前者展示不同组别的历史表现，后者用气泡位置与大小呈现个股差异。
+
+[![公募抱团官网实景](images/fund-holdings.png)](images/fund-holdings.png)
+
+### 美股 13F 机构持仓
+
+按报告期浏览机构持仓，在同一屏对照行业分布、持仓变动和机构名单。图中为 2026 年二季度披露数据。
+
+[![美股 13F 机构持仓官网实景](images/us-holdings.png)](images/us-holdings.png)
+
+### A 股三阶段择时
+
+左侧抄底、同步跟踪、右侧逃顶各有一把评分尺；下方叠加历史得分曲线，可回看三个阶段何时出现分歧。
+
+[![A 股三阶段择时官网实景](images/timing-desk.png)](images/timing-desk.png)
+
+### A 股资金流 · 行业方向
+
+行业表把不同窗口的资金变化排在同一行，便于看出短期流入是否延续。
+
+[![A 股资金流 · 行业方向官网实景](images/flow-direction.png)](images/flow-direction.png)
+
+### A 股资金流 · 趋势与阶段
+
+两张趋势图下方紧接阶段判断表，方便从曲线回到支持判断的指标。
+
+[![A 股资金流 · 趋势与阶段官网实景](images/flow-breadth.png)](images/flow-breadth.png)
+
+[进入 VicAlpha 投研台 →](https://vicalpha.com/tracker)
 
 ## 从你关心的问题开始
 
