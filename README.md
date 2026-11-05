@@ -8,7 +8,7 @@
 
 例如，研究行业轮动时，可以先问「近期哪些行业的资金流入在加速？」，再要求把观察指标整理成投研台，开发并回测一套轮动策略，最后设置信号：「当行业满足这套策略的入选条件时提醒我。」
 
-**[进入 VicAlpha ↗](https://vicalpha.com/)**　 ·　 [浏览研究广场](https://vicalpha.com/plaza)　 ·　 [投研台](#投研台)　 ·　 [内置策略](#内置策略)
+**使用 [VicAlpha](https://vicalpha.com/) 开启专业投研与交易工作流。**
 
 ## 产品能力结构
 
@@ -55,7 +55,9 @@ flowchart TB
 
 ## 投研台
 
-截至 2026 年 11 月 5 日，官网发现目录共 19 个投研台。点击名称直接进入对应投研台，部分入口需要登录。下表按研究用途整理，列出页面内的导航或报告章节。
+你可以用自然语言构建自己的机构级投研台。描述你想研究的问题、需要对照的指标和希望跟踪的信号，例如「帮我搭建一个行业轮动投研台，把市场广度、行业资金流和择时信号放在一起」。
+
+你也可以直接使用[研究广场](https://vicalpha.com/plaza)里的现成投研台。下表按研究用途整理了官网发现目录中的 19 个投研台（2026 年 11 月 5 日），点击名称即可进入，部分入口需要登录。
 
 ### 市场与策略
 
@@ -98,6 +100,8 @@ flowchart TB
 | [机构调研](https://vicalpha.com/dashboard/trk_01M6MGXHV4JVMCNXJPVQ0K27FG) | 哪些公司受到机构调研关注？ | 官网已列出；打开后提示「该台暂未接入」 |
 
 <table><tr><td width="50%" valign="top"><a href="images/fund-holdings.png"><img src="images/fund-holdings.png" alt="公募抱团 · 拥挤度与收益" width="100%"></a><br><sub>公募抱团 · 拥挤度与收益</sub></td><td width="50%" valign="top"><a href="images/us-holdings.png"><img src="images/us-holdings.png" alt="美股 13F · 机构持仓" width="100%"></a><br><sub>美股 13F · 机构持仓</sub></td></tr></table>
+
+**[开始构建自己的第一个投研台](https://vicalpha.com/tracker)**
 
 ---
 
