@@ -10,6 +10,12 @@ VicAlpha 将 AI 融入投资研究与交易决策的全流程，从研究假设�
 
 **[进入 VicAlpha ↗](https://vicalpha.com/)**　 ·　 [浏览研究广场](https://vicalpha.com/plaza)　 ·　 [投研台](#投研台)　 ·　 [内置策略](#内置策略)
 
+## 产品能力结构
+
+多市场数据库与知识库提供研究资料，Sandbox（沙箱）提供研究执行环境。上层工作空间将这些基础能力与投研 Skills、策略回测和持续跟踪工具结合。
+
+[![VicAlpha 产品能力结构图](images/platform-structure.svg)](images/platform-structure.svg)
+
 ## 从问题开始
 
 行业上涨，有多少成分股跟上？从广场挑一份市场复盘，或在工作空间直接提问。会话与研究成果保存在一起，下次可以回到原来的假设继续查证。
