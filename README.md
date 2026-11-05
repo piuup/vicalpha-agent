@@ -1,10 +1,8 @@
-[![VicAlpha 投研助手](cover.svg)](https://vicalpha.com/)
+[![VicAlpha 投研台精选：公募抱团、美股 13F 行业资金与三阶段择时](images/desk-highlights.png)](#投研台图集)
 
-# VicAlpha 投研助手
+**[进入 VicAlpha ↗](https://vicalpha.com/)**　·　[看投研台完整截图](#投研台图集)　·　[逛研究广场](https://vicalpha.com/plaza)
 
-一家公司的利润增长，现金流跟上了吗？一个行业走强，是多数公司一起涨，还是几只权重股在拉动？VicAlpha 把这类问题放在同一个研究空间里，从个股分析和市场研究开始，延伸到选股、回测和持续跟踪。
-
-**[打开 VicAlpha ↗](https://vicalpha.com/)**　·　[浏览研究广场 ↗](https://vicalpha.com/plaza)
+从行业资金流、机构持仓与市场信号开始，在 VicAlpha 工作空间里继续追问、比较策略、跟踪变化。
 
 ## 平台实景
 
