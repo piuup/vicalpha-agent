@@ -1,5 +1,3 @@
-[English](README.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
-
 [![VicAlpha AI 投研工作台，公募抱团与美股 13F 机构持仓界面](images/desk-highlights.png)](https://vicalpha.com/)
 
 <h1 align="center">VicAlpha · AI 原生投研工作台</h1>
@@ -14,7 +12,9 @@
 
 **使用 [VicAlpha](https://vicalpha.com/) 开启专业投研与交易工作流。**
 
-[核心功能](#capabilities)　·　[能力结构](#architecture)　·　[投研台](#desks)　·　[策略与回测](#strategies)　·　[实时信号](#signals)
+<p align="center"><strong><a href="#capabilities">核心功能</a> · <a href="#architecture">能力结构</a> · <a href="#desks">投研台</a> · <a href="#strategies">策略与回测</a> · <a href="#signals">实时信号</a></strong></p>
+
+<p align="center">简体中文 | <a href="README.md">English</a> | <a href="README.zh-TW.md">繁體中文</a></p>
 
 <a name="capabilities"></a>
 

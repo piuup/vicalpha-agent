@@ -1,5 +1,3 @@
-[English](README.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
-
 [![VicAlpha research desks](images/desk-highlights.png)](https://vicalpha.com/)
 
 <h1 align="center">VicAlpha · AI-Native Investment Research</h1>
@@ -14,7 +12,9 @@ The multi-market database covers US, Hong Kong and mainland China equities, ETFs
 
 **Start your investment research workflow with [VicAlpha](https://vicalpha.com/).**
 
-[Capabilities](#capabilities)　·　[Architecture](#architecture)　·　[Research desks](#desks)　·　[Strategies](#strategies)　·　[Signals](#signals)
+<p align="center"><strong><a href="#capabilities">Capabilities</a> · <a href="#architecture">Architecture</a> · <a href="#desks">Research desks</a> · <a href="#strategies">Strategies</a> · <a href="#signals">Signals</a></strong></p>
+
+<p align="center"><a href="README.zh-CN.md">简体中文</a> | English | <a href="README.zh-TW.md">繁體中文</a></p>
 
 <a name="capabilities"></a>
 
