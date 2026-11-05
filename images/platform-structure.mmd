@@ -1,16 +1,30 @@
 flowchart TB
-    D[("多市场数据库")] --> W
-    K["研究知识库"] --> W
-    S["Sandbox 执行环境"] --> W
-    W(["VicAlpha · 自然语言研究工作空间"])
-    W --> R["投研分析<br/>Skills · 个股与市场"]
-    W --> B["投研台<br/>自然语言建台 · 专题看板"]
-    W --> T["策略开发与验证<br/>选股择时 · 回测引擎"]
-    W --> A["持续跟踪与复盘<br/>实时信号 · 定时任务"]
-    classDef core fill:#123f36,color:#ffffff,stroke:#123f36,stroke-width:2px;
-    classDef base fill:#e6eee7,color:#173e34,stroke:#a9beb1;
-    classDef tool fill:#fafaf5,color:#183a32,stroke:#9cb5a7;
-    class W core;
-    class D,K,S base;
-    class R,B,T,A tool;
-    linkStyle default stroke:#719385,stroke-width:1.5px;
+    subgraph entry["研究入口"]
+        direction LR
+        chat["自然语言对话<br/>提出研究问题"]
+        plaza["研究广场<br/>浏览成果与专题"]
+        skills["Skills 模板<br/>选择研究方法"]
+    end
+    subgraph core["核心功能"]
+        direction LR
+        research["研究分析<br/>个股、行业与市场"]
+        desk["投研台<br/>构建专属专题看板"]
+        strategy["策略开发与回测<br/>选股、择时与历史验证"]
+        monitor["跟踪与复盘<br/>信号提醒与定时任务"]
+    end
+    subgraph base["研究基础"]
+        direction LR
+        db["多市场数据库<br/>A 股、港股、美股、ETF、基金"]
+        kb["研究知识库<br/>公司、行业与市场背景"]
+        sandbox["Sandbox 沙箱<br/>研究执行环境"]
+    end
+    workspace["VicAlpha · AI 投研工作空间<br/>提出假设、组织证据、检验策略"]
+    chat --> workspace
+    plaza --> workspace
+    skills --> workspace
+    workspace --> core
+    base -.-> core
+    style entry fill:#ffffff,stroke:#bdcddd
+    style workspace fill:#f1f6fb,stroke:#7691ac
+    style core fill:#eef5fc,stroke:#3c78bf
+    style base fill:#f7f9fb,stroke:#98aabf,stroke-dasharray: 7 5
