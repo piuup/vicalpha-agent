@@ -21,6 +21,14 @@
 
 </details>
 
+### 用 Skills 开始研究
+
+官网 Skills 库有 15 个官方模板，分为个股分析、市场研究、资金流向和投研台四类。选「财报体检」核对管理层承诺与异常信号，或用「投资论点备忘录」论证并反证一个假设。点击模板即可开始对话。 [浏览 Skills ↗](https://vicalpha.com/skills)
+
+<a href="images/skills-library.png"><img src="images/skills-library.png" alt="官方 Skills 模板" width="100%"></a>
+
+---
+
 ## 投研台
 
 截至 2026 年 11 月 5 日，官网发现目录共 19 个投研台。点击名称直接进入对应投研台，部分入口需要登录。下表按研究用途整理，列出页面内的导航或报告章节。
@@ -36,6 +44,8 @@
 | [逆向投资](https://vicalpha.com/dashboard/trk_01M67TX7K5KDJ9TM5ZESM0CR7V) | 哪些低温行业出现拐点信号？ | 逆向总览、市场温度、行业逆向、候选榜、陷阱排雷、拐点信号 |
 | [A 股产业链图谱](https://vicalpha.com/dashboard/trk_01M1R26Z79TDB92XS5M3ZA7AMJ) | 同一条产业链的上下游有哪些环节？ | 选择产业链、上中下游图谱。页面提供环节与产品的下钻说明 |
 
+<table><tr><td width="50%" valign="top"><a href="images/market-temperature.png"><img src="images/market-temperature.png" alt="情绪温度计 · 六维贡献" width="100%"></a><br><sub>情绪温度计 · 六维贡献</sub></td><td width="50%" valign="top"><a href="images/timing-desk.png"><img src="images/timing-desk.png" alt="三阶段择时 · 综合评分" width="100%"></a><br><sub>三阶段择时 · 综合评分</sub></td></tr></table>
+
 ### 资金与交易结构
 
 | 投研台 | 研究问题 | 台内导航与专题 |
@@ -48,6 +58,10 @@
 | [股票供给](https://vicalpha.com/dashboard/trk_01M6K5FQ4ZM6J04MDHVCFX88Z8) | 如何跟踪发行、减持、回购与解禁压力？ | 官网已列出；打开后提示「该台暂未接入」 |
 | [股票ETF资金流](https://vicalpha.com/dashboard/trk_01M6J2TE6YHG3N1M1PTQYYR80Q) | 如何观察 ETF 净申购与成分股被动需求？ | 官网已列出；打开后提示「该台暂未接入」 |
 
+<table><tr><td width="50%" valign="top"><a href="images/market-monitor.png"><img src="images/market-monitor.png" alt="资金流 · 市场总览" width="100%"></a><br><sub>资金流 · 市场总览</sub></td><td width="50%" valign="top"><a href="images/flow-direction.png"><img src="images/flow-direction.png" alt="资金流 · 行业方向" width="100%"></a><br><sub>资金流 · 行业方向</sub></td></tr></table>
+
+[查看更多资金流趋势与阶段](images/flow-breadth.png)
+
 ### 机构与持仓
 
 | 投研台 | 研究问题 | 台内导航与专题 |
@@ -59,34 +73,15 @@
 | [A 股十大流通股东](https://vicalpha.com/dashboard/trk_01M55196PFQ2GNCF02D9YJMPMM) | 重要股东持有哪些标的？筹码是否更集中？ | 股东总览、主体排行、主体详情、个股股东、行业动向、筹码集中度、事件信号 |
 | [机构调研](https://vicalpha.com/dashboard/trk_01M6MGXHV4JVMCNXJPVQ0K27FG) | 哪些公司受到机构调研关注？ | 官网已列出；打开后提示「该台暂未接入」 |
 
-**投研台实景选览**
+<table><tr><td width="50%" valign="top"><a href="images/fund-holdings.png"><img src="images/fund-holdings.png" alt="公募抱团 · 拥挤度与收益" width="100%"></a><br><sub>公募抱团 · 拥挤度与收益</sub></td><td width="50%" valign="top"><a href="images/us-holdings.png"><img src="images/us-holdings.png" alt="美股 13F · 机构持仓" width="100%"></a><br><sub>美股 13F · 机构持仓</sub></td></tr></table>
 
-[![公募抱团投研台：拥挤度分组收益、持仓气泡图及风险观察](images/fund-holdings.png)](images/fund-holdings.png)
+---
 
-<details>
-<summary>展开其余五张投研台实景</summary>
+## AI 策略回测
 
-**美股 13F · 季度持仓**
+在「策略构建 → 策略回测」用自然语言说明策略、基准和想比较的指标。下图是双均线需求的输入示例；右图取自已有的官方赫尔均线报告，展示另外一套规则的参数、买卖条件、失效场景、最大回撤及夏普。
 
-[![美股 13F · 季度持仓](images/us-holdings.png)](images/us-holdings.png)
-
-**三阶段择时 · 综合得分**
-
-[![三阶段择时 · 综合得分](images/timing-desk.png)](images/timing-desk.png)
-
-**A 股资金流 · 市场总览**
-
-[![A 股资金流 · 市场总览](images/market-monitor.png)](images/market-monitor.png)
-
-**A 股资金流 · 行业方向**
-
-[![A 股资金流 · 行业方向](images/flow-direction.png)](images/flow-direction.png)
-
-**A 股资金流 · 趋势与阶段**
-
-[![A 股资金流 · 趋势与阶段](images/flow-breadth.png)](images/flow-breadth.png)
-
-</details>
+<table><tr><td width="50%" valign="top"><a href="images/ai-backtest.png"><img src="images/ai-backtest.png" alt="策略回测 · 自然语言需求示例" width="100%"></a><br><sub>策略回测 · 自然语言需求示例</sub></td><td width="50%" valign="top"><a href="images/strategy-report.png"><img src="images/strategy-report.png" alt="官方报告 · 赫尔均线趋势" width="100%"></a><br><sub>官方报告 · 赫尔均线趋势</sub></td></tr></table>
 
 ## 内置策略
 
@@ -140,5 +135,11 @@
 [![任务 · 类型、频率与状态](images/jobs.png)](images/jobs.png)
 
 </details>
+
+### 设置定时任务
+
+从任务页选择「新建任务」，用自然语言说明研究内容和频率，例如每个交易日收盘后复盘市场广度。回到任务页，可按单次、每天、每个交易日、每周、每月或自定义频率筛选，并检查启用、暂停或异常状态。 [打开任务页 ↗](https://vicalpha.com/jobs)
+
+<table><tr><td width="50%" valign="top"><a href="images/scheduled-prompt.png"><img src="images/scheduled-prompt.png" alt="新建任务 · 指令示例" width="100%"></a><br><sub>新建任务 · 指令示例</sub></td><td width="50%" valign="top"><a href="images/jobs.png"><img src="images/jobs.png" alt="任务列表 · 周期与状态筛选" width="100%"></a><br><sub>任务列表 · 周期与状态筛选</sub></td></tr></table>
 
 [打开 VicAlpha，开始研究 ↗](https://vicalpha.com/)
