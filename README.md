@@ -28,30 +28,37 @@ flowchart TB
     sandbox["Sandbox 沙箱"] -. 执行环境 .-> workspace
 ```
 
-## 从问题开始
+## 研究工作空间与广场
 
-行业上涨，有多少成分股跟上？从广场挑一份市场复盘，或在工作空间直接提问。会话与研究成果保存在一起，下次可以回到原来的假设继续查证。
+你可以用自然语言发起研究，再沿同一条会话追问依据。例如：「今天半导体板块的上涨，是少数权重股带动，还是多数成分股都在涨？」
 
-<details>
-<summary>查看研究广场与工作空间</summary>
+如果想先看一份成品，可以从研究广场浏览市场复盘、产业链报告和策略成果。回到工作空间，可以把自己的研究问题、会话和成果放在一起。
 
-**从广场发现研究主题**
+[**开始你的第一项研究**](https://vicalpha.com/)
 
-[![从广场发现研究主题](images/research-plaza.png)](images/research-plaza.png)
+| 研究入口 | 适合做什么 |
+| --- | --- |
+| 研究广场 | 按成果类型浏览公开研究，找到值得继续追问的问题。 |
+| 工作空间 | 从新会话提出假设，保留上下文，从已有成果回到来源会话。 |
 
-**在工作空间展开研究**
+<table><tr><td width="50%" valign="top"><a href="images/research-plaza.png"><img src="images/research-plaza.png" alt="研究广场 · 浏览成果" width="100%"></a><br><sub>研究广场 · 浏览成果</sub></td><td width="50%" valign="top"><a href="images/workspace.png"><img src="images/workspace.png" alt="工作空间 · 发起研究" width="100%"></a><br><sub>工作空间 · 发起研究</sub></td></tr></table>
 
-[![在工作空间展开研究](images/workspace.png)](images/workspace.png)
+## 投研 Skills
 
-</details>
+你可以用自然语言指定研究任务。例如：「用财报体检分析这家公司，核对上期管理层承诺，并列出本期需要追问的异常变化。」
 
-### 用 Skills 开始研究
+也可以直接选用 Skills 库中的 15 个官方模板。选择模板后即可开始对话，再补充标的、报告期或研究假设。
 
-官网 Skills 库有 15 个官方模板，分为个股分析、市场研究、资金流向和投研台四类。选「财报体检」核对管理层承诺与异常信号，或用「投资论点备忘录」论证并反证一个假设。点击模板即可开始对话。 [浏览 Skills ↗](https://vicalpha.com/skills)
+[**选择一个 Skill 开始研究**](https://vicalpha.com/skills)
 
-<a href="images/skills-library.png"><img src="images/skills-library.png" alt="官方 Skills 模板" width="100%"></a>
+| 官方分类 | 模板数 | 适用任务 |
+| --- | --- | --- |
+| 个股分析 | 6 | 公司一页纸、财报体检、技术面分析及投资论点论证。 |
+| 市场研究 | 4 | 盘后复盘、市场环境研判与次日主线筛选。 |
+| 资金流向 | 3 | 分析资金流向，跟踪国家队及龙虎榜动向。 |
+| 投研台 | 2 | 围绕需要长期观察的问题开展投研台研究。 |
 
----
+[![官方 Skills · 模板与示例问题](images/skills-library.png)](images/skills-library.png)
 
 ## 投研台
 
@@ -107,13 +114,28 @@ flowchart TB
 
 ## AI 策略回测
 
-在「策略构建 → 策略回测」用自然语言说明策略、基准和想比较的指标。下图是双均线需求的输入示例；右图取自已有的官方赫尔均线报告，展示另外一套规则的参数、买卖条件、失效场景、最大回撤及夏普。
+你可以把交易想法写成可检验的规则。例如：「回测双均线择时策略，以沪深 300 为基准，比较不同参数下的收益和最大回撤。」
 
-<table><tr><td width="50%" valign="top"><a href="images/ai-backtest.png"><img src="images/ai-backtest.png" alt="策略回测 · 自然语言需求示例" width="100%"></a><br><sub>策略回测 · 自然语言需求示例</sub></td><td width="50%" valign="top"><a href="images/strategy-report.png"><img src="images/strategy-report.png" alt="官方报告 · 赫尔均线趋势" width="100%"></a><br><sub>官方报告 · 赫尔均线趋势</sub></td></tr></table>
+在工作空间选择「策略构建 → 策略回测」输入需求。也可以先读已有官方报告，看清策略采用的参数、适用行情和失效场景。
+
+[**进入工作空间，开始策略回测**](https://vicalpha.com/)
+
+| 回测环节 | 要说明或检查的内容 |
+| --- | --- |
+| 提出需求 | 标的或样本池、比较基准、买卖规则，以及希望比较的参数。 |
+| 解读报告 | 把收益与最大回撤、夏普放在一起看，再检查交易规则和样本表现分布。 |
+
+<table><tr><td width="50%" valign="top"><a href="images/ai-backtest.png"><img src="images/ai-backtest.png" alt="自然语言输入 · 双均线需求示例" width="100%"></a><br><sub>自然语言输入 · 双均线需求示例</sub></td><td width="50%" valign="top"><a href="images/strategy-report.png"><img src="images/strategy-report.png" alt="已有官方报告 · 赫尔均线趋势" width="100%"></a><br><sub>已有官方报告 · 赫尔均线趋势</sub></td></tr></table>
+
+[![已有报告 · 样本表现分布](images/backtest.png)](images/backtest.png)
 
 ## 内置策略
 
-研究想法能否写成可重复检验的规则？选股回答“选哪些标的”，择时回答“何时参与”。以下八项来自官网官方策略库，可打开报告查看历史回测。
+你可以从现成策略出发，再用自己的问题检验规则。例如：「比较低 PB 和 Piotroski F-Score：两者怎样选股，回撤表现有什么差异？」
+
+官方策略库分别提供选股和择时策略。打开报告可以查看规则、历史收益与回撤，也可以克隆策略继续研究。下表列出八个示例。
+
+[**浏览官方策略库**](https://vicalpha.com/strategies)
 
 | 类型 | 策略 | 规则 |
 | --- | --- | --- |
@@ -126,48 +148,52 @@ flowchart TB
 | 择时 · 趋势跟踪 | 半趋势通道翻转 | 用高低价格的平滑通道识别多空转换。 |
 | 择时 · 趋势跟踪 | SuperTrend 趋势线 | 观察价格穿越基于 ATR 的轨道时，趋势方向是否翻转。 |
 
-<details>
-<summary>查看选股、择时与回测报告</summary>
+<table><tr><td width="50%" valign="top"><a href="images/selection.png"><img src="images/selection.png" alt="官方策略 · 选股" width="100%"></a><br><sub>官方策略 · 选股</sub></td><td width="50%" valign="top"><a href="images/timing.png"><img src="images/timing.png" alt="官方策略 · 择时" width="100%"></a><br><sub>官方策略 · 择时</sub></td></tr></table>
 
-**官方选股策略**
+## 自选行情
 
-[![官方选股策略](images/selection.png)](images/selection.png)
+把正在研究的标的加入自选，沿同一交易日对齐价格、成交量和技术指标。需要进一步分析时，可以在工作空间追问：「这段上涨是否伴随成交量放大？」
 
-**官方择时策略**
+自选页支持切换周期、复权方式和指标。看短期波动时可用日线，对照更长趋势时可切换周线或月线。
 
-[![官方择时策略](images/timing.png)](images/timing.png)
+[**打开自选行情**](https://vicalpha.com/watchlist)
 
-**回测报告 · 样本分布**
+| 观察维度 | 可用工具 |
+| --- | --- |
+| 价格与趋势 | K 线、均线、布林带及复权切换。 |
+| 量能与动量 | 成交量、MACD、KDJ 和 RSI 等指标。 |
 
-[![回测报告 · 样本分布](images/backtest.png)](images/backtest.png)
+[![自选行情 · 同期价格、成交量与 MACD](images/watchlist.png)](images/watchlist.png)
 
-</details>
+## 实时信号提醒
 
-## 持续跟踪
+你可以用自然语言定义关注条件。例如：「当自选股满足我的择时策略入场条件时提醒我。」平台持续跟踪条件，在信号触发时提醒你。
 
-把关注的标的放进自选，沿同一交易日对照价格、均线与成交量。需要观察变化时，可以在信号页按类别、方向和强度筛选，再到任务页查看定时研究与回测任务的执行状态。
+在信号页，可以从信号流开始，再用类别、方向和强度缩小范围；想比较多只股票时，也可以切换列表或热力视图。
 
-<details>
-<summary>查看自选行情、信号与任务</summary>
+[**查看交易信号**](https://vicalpha.com/signal)
 
-**自选行情 · K 线与成交量**
+| 筛选维度 | 可选范围 |
+| --- | --- |
+| 信号来源 | 策略、技术、形态、量价、资金、事件。 |
+| 阅读方式 | 按方向与强度筛选，按股票合并或逐条查看。 |
 
-[![自选行情 · K 线与成交量](images/watchlist.png)](images/watchlist.png)
+[![信号页 · 类别、方向与强度](images/signals.png)](images/signals.png)
 
-**信号 · 类别与强度筛选**
+## 定时研究任务
 
-[![信号 · 类别与强度筛选](images/signals.png)](images/signals.png)
+把重复研究写成一条带频率的指令。例如：「每个交易日收盘后，复盘 A 股市场广度、成交额和领涨行业。」
 
-**任务 · 类型、频率与状态**
+从任务页点「新建任务」描述需求。已有任务可以按类型、频率和执行状态查找，便于检查哪些研究仍在跟踪、哪些需要处理。
 
-[![任务 · 类型、频率与状态](images/jobs.png)](images/jobs.png)
+[**开始设置你的第一个定时任务**](https://vicalpha.com/jobs)
 
-</details>
+| 任务管理 | 可用选项 |
+| --- | --- |
+| 研究类型 | 报告、选股、回测与策略、简报等。 |
+| 执行频率 | 单次、每天、每个交易日、每周、每月或自定义。 |
+| 运行状态 | 启用、已暂停、异常、已停止。 |
 
-### 设置定时任务
-
-从任务页选择「新建任务」，用自然语言说明研究内容和频率，例如每个交易日收盘后复盘市场广度。回到任务页，可按单次、每天、每个交易日、每周、每月或自定义频率筛选，并检查启用、暂停或异常状态。 [打开任务页 ↗](https://vicalpha.com/jobs)
-
-<table><tr><td width="50%" valign="top"><a href="images/scheduled-prompt.png"><img src="images/scheduled-prompt.png" alt="新建任务 · 指令示例" width="100%"></a><br><sub>新建任务 · 指令示例</sub></td><td width="50%" valign="top"><a href="images/jobs.png"><img src="images/jobs.png" alt="任务列表 · 周期与状态筛选" width="100%"></a><br><sub>任务列表 · 周期与状态筛选</sub></td></tr></table>
+<table><tr><td width="50%" valign="top"><a href="images/scheduled-prompt.png"><img src="images/scheduled-prompt.png" alt="新建任务 · 指令示例" width="100%"></a><br><sub>新建任务 · 指令示例</sub></td><td width="50%" valign="top"><a href="images/jobs.png"><img src="images/jobs.png" alt="任务列表 · 频率与状态" width="100%"></a><br><sub>任务列表 · 频率与状态</sub></td></tr></table>
 
 [打开 VicAlpha，开始研究 ↗](https://vicalpha.com/)
