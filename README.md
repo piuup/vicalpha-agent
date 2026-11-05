@@ -6,19 +6,19 @@
 
 **Research markets, develop strategies and build research desks in natural language.** Describe a signal and VicAlpha tracks the condition in real time, alerting you when it fires.
 
-The multi-market database covers US, Hong Kong and mainland China equities, ETFs and funds. A research knowledge base provides context for company analysis, holdings research and backtests.
+The **multi-market database** covers US, Hong Kong and mainland China equities, ETFs and funds. A **research knowledge base** provides context for company analysis, holdings research and backtests.
 
 > **Sector rotation**　“Which industries are seeing accelerating inflows? Put them on a desk, backtest a rotation strategy, and alert me when an industry qualifies.”
 
 **Start your investment research workflow with [VicAlpha](https://vicalpha.com/).**
 
-<p align="center"><strong><a href="#capabilities">Capabilities</a> · <a href="#architecture">Architecture</a> · <a href="#desks">Research desks</a> · <a href="#strategies">Strategies</a> · <a href="#signals">Signals</a></strong></p>
+<p align="center"><strong><a href="#capabilities">✨ Capabilities</a> · <a href="#architecture">🏛️ Architecture</a> · <a href="#desks">📊 Research desks</a> · <a href="#strategies">🧪 Strategies</a> · <a href="#signals">📡 Signals</a></strong></p>
 
 <p align="center"><a href="README.zh-CN.md">简体中文</a> | English | <a href="README.zh-TW.md">繁體中文</a></p>
 
 <a name="capabilities"></a>
 
-## ✦ Core capabilities
+## ✨ Core capabilities
 
 | 🔎 Research | 📊 Strategy development | 📡 Monitoring |
 | --- | --- | --- |
@@ -27,9 +27,9 @@ The multi-market database covers US, Hong Kong and mainland China equities, ETFs
 
 <a name="architecture"></a>
 
-## ◇ Platform structure
+## 🏛️ Platform structure
 
-Market data and the knowledge base supply research inputs. Sandbox provides a research execution environment. The workspace brings these together for analysis, desk construction, strategy development and monitoring.
+Market data and the knowledge base supply research inputs. **Sandbox** provides a research execution environment. The workspace brings these together for analysis, desk construction, strategy development and monitoring.
 
 [![VicAlpha product structure](images/platform-structure-en.png)](images/platform-structure-en.png)
 
@@ -37,13 +37,13 @@ Market data and the knowledge base supply research inputs. Sandbox provides a re
 
 <a name="workspace"></a>
 
-## ◈ Research workspace and plaza
+## 💬 Research workspace and plaza
 
 Ask a question and follow the evidence in the same conversation. For example, “Did a few large semiconductor stocks drive today’s advance, or did most constituents participate?”
 
 Browse market reviews, industry-chain reports and strategy research in the plaza. In your workspace, each research artifact retains a path to its source conversation.
 
-[**Start your first research session**](https://vicalpha.com/)
+[**Start your first research session ↗**](https://vicalpha.com/)
 
 | Entry | Use |
 | --- | --- |
@@ -54,11 +54,11 @@ Browse market reviews, industry-chain reports and strategy research in the plaza
 
 <a name="skills"></a>
 
-## ⌘ Research Skills
+## 🧩 Research Skills
 
-Choose from 15 official templates, then specify the security, reporting period and hypothesis. Try “Review this company’s financial statements and check whether management delivered on its prior commitments.”
+Choose from **15 official templates**, then specify the security, reporting period and hypothesis. Try “Review this company’s financial statements and check whether management delivered on its prior commitments.”
 
-[**Choose a research Skill**](https://vicalpha.com/skills)
+[**Choose a research Skill ↗**](https://vicalpha.com/skills)
 
 | Category | Templates | Examples |
 | --- | --- | --- |
@@ -71,13 +71,13 @@ Choose from 15 official templates, then specify the security, reporting period a
 
 <a name="desks"></a>
 
-## ▦ Research desks
+## 📊 Research desks
 
 Build a desk by describing the question, indicators and signals you want to follow. For example, “Build a sector-rotation desk with market breadth, industry flows and timing signals.”
 
-You can also open a ready-made desk in the [research plaza](https://vicalpha.com/plaza). The discovery directory listed 19 desks on 5 November 2026. Names below link directly to the platform. Some require sign-in.
+You can also open a ready-made desk in the [research plaza](https://vicalpha.com/plaza). The discovery directory listed **19 desks** on 5 November 2026. Names below link directly to the platform. Some require sign-in.
 
-[**Build your first research desk**](https://vicalpha.com/tracker)
+[**Build your first research desk ↗**](https://vicalpha.com/tracker)
 
 ### Markets and strategies
 
@@ -123,7 +123,7 @@ You can also open a ready-made desk in the [research plaza](https://vicalpha.com
 
 <a name="strategies"></a>
 
-## ∆ AI strategy development and backtesting
+## 🧪 AI strategy development and backtesting
 
 Start with an investment hypothesis or an existing public strategy, then test the conditions under which the rule worked and the drawdowns it incurred.
 
@@ -131,7 +131,7 @@ Start with an investment hypothesis or an existing public strategy, then test th
 
 Specify the universe, benchmark, rules and parameters in plain language. For example, “Backtest a dual moving-average rule against the CSI 300. Compare returns and maximum drawdown across parameter choices.”
 
-[**Start strategy development**](https://vicalpha.com/)
+[**Start strategy development ↗**](https://vicalpha.com/)
 
 | Stage | What to check |
 | --- | --- |
@@ -140,7 +140,7 @@ Specify the universe, benchmark, rules and parameters in plain language. For exa
 
 <table><tr><td width="50%" valign="top"><a href="images/ai-backtest.png"><img src="images/ai-backtest.png" width="100%" alt="A natural-language backtest request"></a><br><sub>A natural-language backtest request</sub></td><td width="50%" valign="top"><a href="images/strategy-report.png"><img src="images/strategy-report.png" width="100%" alt="A separate official Hull trend report"></a><br><sub>A separate official Hull trend report</sub></td></tr></table>
 
-**From an actual session: SuperTrend on a gold ETF.** Strategy development is on the left and its report is on the right. From 8 September 2023 to 7 September 2026, the historical return was 29.29% and the maximum drawdown was 30.72%.
+**From an actual session: SuperTrend on a gold ETF.** Strategy development is on the left and its report is on the right. From **8 September 2023 to 7 September 2026**, the historical return was **29.29%** and the maximum drawdown was **30.72%**.
 
 [![Gold ETF development conversation and backtest report](images/gold-etf-session.png)](images/gold-etf-session.png)
 
@@ -148,7 +148,7 @@ Specify the universe, benchmark, rules and parameters in plain language. For exa
 
 Use a public strategy as a starting point. Inspect its rules and historical report, or clone it for further research. For example, compare low price-to-book with the Piotroski F-Score and investigate how their drawdowns differ.
 
-[**Explore the public strategy library**](https://vicalpha.com/strategies)
+[**Explore the public strategy library ↗**](https://vicalpha.com/strategies)
 
 [![Strategy center and official categories](images/strategy-center.png)](images/strategy-center.png)
 
@@ -163,7 +163,7 @@ Use a public strategy as a starting point. Inspect its rules and historical repo
 | Timing · Trend | HalfTrend channel reversal | Identify reversals using a smoothed high-low channel. | [![HalfTrend channel reversal backtest](images/report-halftrend.png)](images/report-halftrend.png) |
 | Timing · Trend | SuperTrend | Track trend flips at ATR-based price bands. | [![SuperTrend backtest](images/report-supertrend.png)](images/report-supertrend.png) |
 
-**Selected historical results.** Of the four examples shown in each category, low P/B led stock selection by annualized return (16.0%, maximum drawdown 17.4%). Hull trend led timing (19.1%, maximum drawdown 25.7%). The first is a portfolio result; the second averages 100 securities.
+**Selected historical results.** Of the four examples shown in each category, low P/B led stock selection by annualized return (**16.0%, maximum drawdown 17.4%**). Hull trend led timing (**19.1%, maximum drawdown 25.7%**). The first is a portfolio result; the second averages 100 securities.
 
 [![Low P/B portfolio and benchmark performance](images/report-low-pb.png)](images/report-low-pb.png)
 
@@ -171,11 +171,11 @@ Use a public strategy as a starting point. Inspect its rules and historical repo
 
 <a name="equities"></a>
 
-## ◎ Equity research and monitoring
+## 🔎 Equity research and monitoring
 
 Compare stock performance with the underlying business. For example, “Did earnings and revenue move in step with the share price relative to the CSI 300?” The Kweichow Moutai overview below combines quotes, a benchmark comparison, company information and revenue composition.
 
-[**Explore a stock research page**](https://vicalpha.com/stock/600519.SH)
+[**Explore a stock research page ↗**](https://vicalpha.com/stock/600519.SH)
 
 | View | Tools |
 | --- | --- |
@@ -187,11 +187,11 @@ Compare stock performance with the underlying business. For example, “Did earn
 
 <a name="signals"></a>
 
-## ◉ Real-time signal alerts
+## 📡 Real-time signal alerts
 
 Define a condition in natural language, such as “Alert me when a stock on my watchlist meets the entry rules for my timing strategy.” VicAlpha monitors the condition and alerts you when it triggers.
 
-[**View market signals**](https://vicalpha.com/signal)
+[**View market signals ↗**](https://vicalpha.com/signal)
 
 | Filter | Choices |
 | --- | --- |
@@ -202,11 +202,11 @@ Define a condition in natural language, such as “Alert me when a stock on my w
 
 <a name="tasks"></a>
 
-## ◷ Scheduled research
+## 🗓️ Scheduled research
 
 Turn a recurring question into a task. Try “After each trading session, review A-share market breadth, turnover and leading sectors.” Choose New task and describe the research and frequency.
 
-[**Set up your first scheduled task**](https://vicalpha.com/jobs)
+[**Set up your first scheduled task ↗**](https://vicalpha.com/jobs)
 
 | Task setting | Options |
 | --- | --- |
