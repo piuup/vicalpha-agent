@@ -59,6 +59,8 @@ flowchart TB
 
 你也可以直接使用[研究广场](https://vicalpha.com/plaza)里的现成投研台。下表按研究用途整理了官网发现目录中的 19 个投研台（2026 年 11 月 5 日），点击名称即可进入，部分入口需要登录。
 
+[**开始构建自己的第一个投研台**](https://vicalpha.com/tracker)
+
 ### 市场与策略
 
 | 投研台 | 研究问题 | 台内导航与专题 |
@@ -100,8 +102,6 @@ flowchart TB
 | [机构调研](https://vicalpha.com/dashboard/trk_01M6MGXHV4JVMCNXJPVQ0K27FG) | 哪些公司受到机构调研关注？ | 官网已列出；打开后提示「该台暂未接入」 |
 
 <table><tr><td width="50%" valign="top"><a href="images/fund-holdings.png"><img src="images/fund-holdings.png" alt="公募抱团 · 拥挤度与收益" width="100%"></a><br><sub>公募抱团 · 拥挤度与收益</sub></td><td width="50%" valign="top"><a href="images/us-holdings.png"><img src="images/us-holdings.png" alt="美股 13F · 机构持仓" width="100%"></a><br><sub>美股 13F · 机构持仓</sub></td></tr></table>
-
-**[开始构建自己的第一个投研台](https://vicalpha.com/tracker)**
 
 ---
 
