@@ -14,7 +14,19 @@
 
 多市场数据库与知识库提供研究资料，Sandbox（沙箱）提供研究执行环境。上层工作空间将这些基础能力与投研 Skills、策略回测和持续跟踪工具结合。
 
-[![VicAlpha 产品能力结构图](images/platform-structure.svg)](images/platform-structure.svg)
+```mermaid
+flowchart TB
+    user["用自然语言提出研究需求"] --> workspace["VicAlpha · AI 投研工作空间"]
+    workspace --> research["研究与分析"]
+    workspace --> strategy["策略开发"]
+    workspace --> tracking["持续跟踪"]
+    research --> desks["调用投研 Skills<br/>分析公司与市场 · 构建投研台"]
+    strategy --> test["选股与择时规则<br/>策略回测 · 收益与风险评估"]
+    tracking --> alerts["事件跟踪 · 定时任务<br/>实时信号提醒与复盘"]
+    data[("多市场数据库<br/>A 股 · 港股 · 美股 · ETF · 基金")] -. 研究数据 .-> workspace
+    kb[("知识库")] -. 研究背景 .-> workspace
+    sandbox["Sandbox 沙箱"] -. 执行环境 .-> workspace
+```
 
 ## 从问题开始
 
