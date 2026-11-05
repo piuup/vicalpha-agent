@@ -1,0 +1,440 @@
+<!doctype html><html lang="zh-TW"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VicAlpha · AI 投研工作台</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f6f6ef;color:#163631;font:17px/1.75 system-ui,sans-serif}main,header,footer{width:min(1080px,90%);margin:auto}header,footer{display:flex;align-items:center;justify-content:space-between;padding:20px 0}a{color:#185344;text-underline-offset:5px}a:focus-visible,summary:focus-visible{outline:3px solid #ba640a;outline-offset:4px}header strong{font: bold 24px Georgia,serif}.cover{width:100%;display:block;border-radius:5px}.intro{padding:42px 0 32px;max-width:780px}h1,h2{line-height:1.25;letter-spacing:-.04em}h1{font-size:clamp(31px,5vw,59px);margin:0}p{margin:16px 0}.cta{display:inline-block;background:#13483e;color:white;padding:10px 21px;border-radius:4px;text-decoration:none;margin:8px 18px 0 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 44px}article,details,footer{border-top:1px solid #b6c7bb}article{padding:16px 0}article h3{margin:0;font-size:21px}article p{color:#425a51;margin:8px 0}section{margin-bottom:40px}summary{cursor:pointer;padding:12px 0;font-weight:650}details p{margin:0 0 20px}footer{font-size:15px}@media(max-width:650px){.grid{grid-template-columns:1fr}.intro{padding-top:26px}header,footer{padding:14px 0}}
+figure{margin:24px 0 36px}figure img{display:block;width:100%;height:auto;border:1px solid #c9d3cc;border-radius:6px}figcaption{margin:10px 0;color:#425a51}figure img{max-width:100%;width:auto;margin-inline:auto}figure a:has(img){display:block;padding:clamp(8px,2vw,24px);background:#e9eee7;border-radius:8px}figure h3{margin-bottom:10px}table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid #c6d3ca}th:first-child{width:21%}th:nth-child(2){width:32%}.desk-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0 36px}.desk-pair figure{margin:0}.desk-pair img{display:block;width:100%;height:auto}.desk-pair figure a:has(img){padding:6px}h2{padding-top:20px;border-top:1px solid #a6bbb0}tbody tr:focus-within,tbody tr:hover{background:#e6ede6}@media(max-width:620px){.desk-pair{grid-template-columns:1fr}}@media(prefers-reduced-motion:no-preference){tbody tr{transition:background-color .18s}.arrived{animation:appear .28s ease-out}@keyframes appear{from{opacity:.75;transform:translateY(4px)}to{opacity:1;transform:none}}}main{max-width:1040px;padding:22px 0 50px}main img{display:block;max-width:100%;height:auto}main>p>a>img{width:100%}main>p:first-child{text-align:center}h2{margin-top:48px}h3{margin-top:30px}blockquote{margin:16px 0;padding:10px 18px;border-left:3px solid #4e806b;background:#eaf0e7}.table-wrap{max-width:100%;overflow:auto;margin:14px 0}.table-wrap img{min-width:96px}th,td{font-size:15px}.table-wrap td[width]{width:50%;vertical-align:top}h1{font-size:clamp(30px,5vw,54px)}main>p:last-child{margin-top:36px}@media(max-width:640px){main{width:94%}th,td{font-size:14px}table{min-width:440px}table:has(td[width]){min-width:0}.table-wrap img{min-width:0}}</style><main><p><a href="index.html">English</a> · <a href="index.zh-CN.html">简体中文</a> · <a href="index.zh-TW.html">繁體中文</a></p>
+<p><a href="https://vicalpha.com/"><img alt="VicAlpha AI 投研工作台，公募抱團與美股 13F 機構持倉介面" src="images/desk-highlights.png" /></a></p>
+<h1 align="center">VicAlpha · AI 原生投研工作台</h1>
+
+<p align="center"><b>為機構級投資研究而設計</b></p>
+
+<p><strong>用自然語言研究市場、開發策略、構建投研台。</strong> 描述你關心的訊號，VicAlpha 會實時跟蹤，在條件滿足時提醒你。</p>
+<p>多市場資料庫覆蓋 A 股、港股、美股、ETF 和基金；底層知識庫為公司分析、持倉研究和策略回測提供研究背景。</p>
+<blockquote>
+<p><strong>以行業輪動為例</strong>　「哪些行業的資金流入正在加速？把它們放進投研台，回測一套輪動策略，並在行業滿足入選條件時提醒我。」</p>
+</blockquote>
+<p><strong>使用 <a href="https://vicalpha.com/">VicAlpha</a> 開啟專業投研與交易工作流。</strong></p>
+<p><a href="#capabilities">核心功能</a>　·　<a href="#architecture">能力結構</a>　·　<a href="#desks">投研台</a>　·　<a href="#strategies">策略與回測</a>　·　<a href="#signals">即時訊號</a></p>
+<p><a name="capabilities"></a></p>
+<h2>✦ 核心功能</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>🔎 研究與分析</th>
+<th>📊 策略與回測</th>
+<th>📡 跟蹤與覆盤</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>15 個投研 Skills</strong> · 分析公司、財報、市場與資金流</td>
+<td><strong>自然語言開發</strong> · 從選股、擇時規則到回測報告</td>
+<td><strong>實時訊號</strong> · 按方向、強度、事件篩選</td>
+</tr>
+<tr>
+<td><strong>19 個投研台入口</strong> · 瀏覽或構建專題研究頁</td>
+<td><strong>公共策略</strong> · 檢視引數、淨值、回撤與分組表現</td>
+<td><strong>定時研究</strong> · 按交易日或自定義週期跟蹤</td>
+</tr>
+</tbody>
+</table></div>
+<p><a name="architecture"></a></p>
+<h2>◇ 產品能力結構</h2>
+<p>多市場資料庫與知識庫提供研究資料，Sandbox（沙箱）提供研究執行環境。上層工作空間將這些基礎能力與投研 Skills、策略回測和持續跟蹤工具結合。</p>
+<p><a href="images/platform-structure-tw.png"><img alt="VicAlpha 產品能力結構" src="images/platform-structure-tw.png" /></a></p>
+<p><a href="images/platform-structure-tw.mmd">檢視 Mermaid 原始碼</a></p>
+<p><a name="workspace"></a></p>
+<h2>◈ 研究工作空間與廣場</h2>
+<p>你可以用自然語言發起研究，再沿同一條會話追問依據。例如：「今天半導體板塊的上漲，是少數權重股帶動，還是多數成分股都在漲？」</p>
+<p>如果想先看一份成品，可以從研究廣場瀏覽市場覆盤、產業鏈報告和策略成果。回到工作空間，可以把自己的研究問題、會話和成果放在一起。</p>
+<p><a href="https://vicalpha.com/"><strong>開始你的第一項研究</strong></a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>研究入口</th>
+<th>適合做什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>研究廣場</td>
+<td>按成果型別瀏覽公開研究，找到值得繼續追問的問題。</td>
+</tr>
+<tr>
+<td>工作空間</td>
+<td>從新會話提出假設，保留上下文，從已有成果回到來源會話。</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table><tr><td width="50%" valign="top"><a href="images/research-plaza.png"><img src="images/research-plaza.png" alt="研究廣場 · 瀏覽成果" width="100%"></a><br><sub>研究廣場 · 瀏覽成果</sub></td><td width="50%" valign="top"><a href="images/workspace.png"><img src="images/workspace.png" alt="工作空間 · 發起研究" width="100%"></a><br><sub>工作空間 · 發起研究</sub></td></tr></table></div>
+
+<p><a name="skills"></a></p>
+<h2>⌘ 投研 Skills</h2>
+<p>你可以用自然語言指定研究任務。例如：「用財報體檢分析這家公司，核對上期管理層承諾，並列出本期需要追問的異常變化。」</p>
+<p>也可以直接選用 Skills 庫中的 15 個官方模板。選擇模板後即可開始對話，再補充標的、報告期或研究假設。</p>
+<p><a href="https://vicalpha.com/skills"><strong>選擇一個 Skill 開始研究</strong></a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>官方分類</th>
+<th>模板數</th>
+<th>適用任務</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>個股分析</td>
+<td>6</td>
+<td>公司一頁紙、財報體檢、技術面分析及投資論點論證。</td>
+</tr>
+<tr>
+<td>市場研究</td>
+<td>4</td>
+<td>盤後覆盤、市場環境研判與次日主線篩選。</td>
+</tr>
+<tr>
+<td>資金流向</td>
+<td>3</td>
+<td>分析資金流向，跟蹤國家隊及龍虎榜動向。</td>
+</tr>
+<tr>
+<td>投研台</td>
+<td>2</td>
+<td>圍繞需要長期觀察的問題開展投研台研究。</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="images/skills-library.png"><img alt="官方 Skills · 模板與示例問題" src="images/skills-library.png" /></a></p>
+<p><a name="desks"></a></p>
+<h2>▦ 投研台</h2>
+<p>你可以用自然語言構建自己的機構級投研台。描述你想研究的問題、需要對照的指標和希望跟蹤的訊號，例如「幫我搭建一個行業輪動投研台，把市場廣度、行業資金流和擇時訊號放在一起」。</p>
+<p>你也可以直接使用<a href="https://vicalpha.com/plaza">研究廣場</a>裡的現成投研台。下表按研究用途整理了官網發現目錄中的 19 個投研台（2026 年 11 月 5 日），點選名稱即可進入，部分入口需要登入。</p>
+<p><a href="https://vicalpha.com/tracker"><strong>開始構建自己的第一個投研台</strong></a></p>
+<h3>市場與策略</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投研台</th>
+<th>研究問題</th>
+<th>臺內導航與專題</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M544AT6G7NJDN1DGTHD3TZWJ">A 股行情綜合屏</a></td>
+<td>市場漲跌由哪些板塊帶動？</td>
+<td>行情、情緒、板塊、資金、龍虎榜</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M6GATFGCSW9T3W052JCYZP3D">情緒溫度計</a></td>
+<td>市場情緒處於什麼位置？</td>
+<td>溫度總覽、維度分解、指標明細、訊號事件、歷史覆盤</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M652CD3DX0AXP42X0KFD3ZYT">漲停板</a></td>
+<td>連板高度和題材熱度如何演變？</td>
+<td>情緒總覽、連板天梯、題材主線、個股明細、次日表現</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/live/trk_01M0Z1BYTTESV4KJRNQFY17243">XHN-A股擇時系統</a></td>
+<td>左側、同步與右側訊號何時一致？</td>
+<td>綜合看板、左側抄底、同步跟蹤、右側逃頂、使用方法、指標體系</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M67TX7K5KDJ9TM5ZESM0CR7V">逆向投資</a></td>
+<td>哪些低溫行業出現拐點訊號？</td>
+<td>逆向總覽、市場溫度、行業逆向、候選榜、陷阱排雷、拐點訊號</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M1R26Z79TDB92XS5M3ZA7AMJ">A 股產業鏈圖譜</a></td>
+<td>同一條產業鏈的上下游有哪些環節？</td>
+<td>選擇產業鏈、上中下游圖譜。頁面提供環節與產品的下鑽說明</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table><tr><td width="50%" valign="top"><a href="images/market-temperature.png"><img src="images/market-temperature.png" alt="情緒溫度計 · 六維貢獻" width="100%"></a><br><sub>情緒溫度計 · 六維貢獻</sub></td><td width="50%" valign="top"><a href="images/timing-desk.png"><img src="images/timing-desk.png" alt="三階段擇時 · 綜合評分" width="100%"></a><br><sub>三階段擇時 · 綜合評分</sub></td></tr></table></div>
+
+<h3>資金與交易結構</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投研台</th>
+<th>研究問題</th>
+<th>臺內導航與專題</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://vicalpha.com/live/trk_01M0KE8SD5E4FC9TYVX82JSR05">A股資金流投研台</a></td>
+<td>如何從資金需求、供給與廣度形成日度判斷？</td>
+<td>日度報告共 12 節：結論、增量、供給、方向、承接、主體、行為、廣度、趨勢、階段、交易、口徑</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M5MH0K50GYYV6EMYT674E7KP">A 股資金流</a></td>
+<td>哪些渠道和板塊的資金動向值得跟蹤？</td>
+<td>總覽、主力動向、板塊跟蹤、個股熱圖、兩融槓桿、跨境資金、ETF 資金、龍虎榜、產業資本</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M61AJ1TDEH04E6QTJ82DAVJQ">A 股融資融券</a></td>
+<td>槓桿週期走到哪裡？哪些標的風險較高？</td>
+<td>總覽、槓桿週期、行業兩融、個股兩融、風險監測、個股詳情</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M68EM7X3XGD7ZSFKGWQ0YMHR">全 A 籌碼結構</a></td>
+<td>不同板塊的持倉成本和獲利比例有何差異？</td>
+<td>籌碼總覽、行業籌碼、籌碼篩選、個股籌碼</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M5NRYV1THPTBNSA5QZTZXCQC">A 股交易擁擠度</a></td>
+<td>擁擠集中在哪些行業、風格和個股？</td>
+<td>總覽、市場擁擠、行業擁擠、行業詳情、風格擁擠、個股擁擠、個股詳情、機構持倉</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M6K5FQ4ZM6J04MDHVCFX88Z8">股票供給</a></td>
+<td>如何跟蹤發行、減持、回購與解禁壓力？</td>
+<td>官網已列出；開啟後提示「該臺暫未接入」</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M6J2TE6YHG3N1M1PTQYYR80Q">股票ETF資金流</a></td>
+<td>如何觀察 ETF 淨申購與成分股被動需求？</td>
+<td>官網已列出；開啟後提示「該臺暫未接入」</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table><tr><td width="50%" valign="top"><a href="images/market-monitor.png"><img src="images/market-monitor.png" alt="資金流 · 市場總覽" width="100%"></a><br><sub>資金流 · 市場總覽</sub></td><td width="50%" valign="top"><a href="images/flow-direction.png"><img src="images/flow-direction.png" alt="資金流 · 行業方向" width="100%"></a><br><sub>資金流 · 行業方向</sub></td></tr></table></div>
+
+<p><a href="images/flow-breadth.png">檢視更多資金流趨勢與階段</a></p>
+<h3>機構與持倉</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>投研台</th>
+<th>研究問題</th>
+<th>臺內導航與專題</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M61AH34C7CZVPRZABP2H6FNV">公募抱團</a></td>
+<td>公募持倉集中在哪裡？擁擠組的表現如何？</td>
+<td>抱團總覽、個股擁擠度、個股透視、基金與資金、行業與倉位、抱團指數</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M6BNGVY94CDVMMTZFJX6VPV6">A 股公募持倉</a></td>
+<td>不同基金公司怎樣配置行業和個股？</td>
+<td>持倉總覽、公募排行、持倉詳情、個股持倉、行業動向、持倉熱力、公司比較</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M1WKA7BJYSXWN5T2XN6EED58">美股 13F 機構持倉</a></td>
+<td>哪些機構調整了持倉？行業分佈如何變化？</td>
+<td>13F 總覽、機構排行、機構詳情、個股持倉、行業動向、持倉動向、機構對比</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M6FBPM1THJ7KECTFKEQB8DMB">國家隊全景</a></td>
+<td>國家隊透過哪些 ETF 和持股組合參與市場？</td>
+<td>全景總覽、ETF 託底、持股組合、持倉全景、調倉動向、主體詳情、個股透視</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M55196PFQ2GNCF02D9YJMPMM">A 股十大流通股東</a></td>
+<td>重要股東持有哪些標的？籌碼是否更集中？</td>
+<td>股東總覽、主體排行、主體詳情、個股股東、行業動向、籌碼集中度、事件訊號</td>
+</tr>
+<tr>
+<td><a href="https://vicalpha.com/dashboard/trk_01M6MGXHV4JVMCNXJPVQ0K27FG">機構調研</a></td>
+<td>哪些公司受到機構調研關注？</td>
+<td>官網已列出；開啟後提示「該臺暫未接入」</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table><tr><td width="50%" valign="top"><a href="images/fund-holdings.png"><img src="images/fund-holdings.png" alt="公募抱團 · 擁擠度與收益" width="100%"></a><br><sub>公募抱團 · 擁擠度與收益</sub></td><td width="50%" valign="top"><a href="images/us-holdings.png"><img src="images/us-holdings.png" alt="美股 13F · 機構持倉" width="100%"></a><br><sub>美股 13F · 機構持倉</sub></td></tr></table></div>
+
+<hr />
+<p><a name="strategies"></a></p>
+<h2>∆ AI 策略構建與回測</h2>
+<p>你可以從自己的交易假設開始，也可以選用官方策略作為起點。兩種方式都可以結合歷史回測，檢查規則在什麼條件下有效，以及為此承擔了多大回撤。</p>
+<h3>自定義策略</h3>
+<p>你可以把交易想法寫成可檢驗的規則。例如：「回測雙均線擇時策略，以滬深 300 為基準，比較不同引數下的收益和最大回撤。」</p>
+<p>在工作空間選擇「策略構建 → 策略回測」輸入需求。也可以先讀已有官方報告，看清策略採用的引數、適用行情和失效場景。</p>
+<p><a href="https://vicalpha.com/"><strong>開始策略開發</strong></a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>回測環節</th>
+<th>要說明或檢查的內容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>提出需求</td>
+<td>標的或樣本池、比較基準、買賣規則，以及希望比較的引數。</td>
+</tr>
+<tr>
+<td>解讀報告</td>
+<td>把收益與最大回撤、夏普放在一起看，再檢查交易規則和樣本表現分佈。</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table><tr><td width="50%" valign="top"><a href="images/ai-backtest.png"><img src="images/ai-backtest.png" alt="自然語言輸入 · 雙均線需求示例" width="100%"></a><br><sub>自然語言輸入 · 雙均線需求示例</sub></td><td width="50%" valign="top"><a href="images/strategy-report.png"><img src="images/strategy-report.png" alt="已有官方報告 · 赫爾均線趨勢" width="100%"></a><br><sub>已有官方報告 · 赫爾均線趨勢</sub></td></tr></table></div>
+
+<p><strong>歷史會話實景 · 黃金 ETF SuperTrend</strong></p>
+<p>左側為策略開發對話，右側為同一會話中開啟的回測報告。報告覆蓋 2023-09-08 至 2026-09-07，總收益 29.29%，最大回撤 30.72%。</p>
+<p><a href="images/gold-etf-session.png"><img alt="黃金 ETF · 開發會話與回測報告" src="images/gold-etf-session.png" /></a></p>
+<h3>公共策略</h3>
+<p>你可以從現成策略出發，再用自己的問題檢驗規則。例如：「比較低 PB 和 Piotroski F-Score：兩者怎樣選股，回撤表現有什麼差異？」</p>
+<p>官方策略庫分別提供選股和擇時策略。開啟報告可以檢視規則、歷史收益與回撤，也可以克隆策略繼續研究。下表列出八個示例。</p>
+<p><a href="https://vicalpha.com/strategies"><strong>瀏覽公共策略庫</strong></a></p>
+<p><a href="images/strategy-center.png"><img alt="策略中心 · 官方策略與分類" src="images/strategy-center.png" /></a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>型別</th>
+<th>策略</th>
+<th>規則</th>
+<th>歷史回測</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>選股 · 價值</td>
+<td>低 PB</td>
+<td>按賬面價值相對市值篩選股票。</td>
+<td><a href="images/report-low-pb.png"><img alt="低 PB回測表現" src="images/report-low-pb.png" /></a></td>
+</tr>
+<tr>
+<td>選股 · 質量</td>
+<td>Piotroski F-Score</td>
+<td>用九項財務訊號衡量公司質量。</td>
+<td><a href="images/report-f-score.png"><img alt="Piotroski F-Score回測表現" src="images/report-f-score.png" /></a></td>
+</tr>
+<tr>
+<td>選股 · 價值</td>
+<td>聶夫總回報</td>
+<td>結合低市盈率、適度增長和分紅篩選公司。</td>
+<td><a href="images/report-neff.png"><img alt="聶夫總回報回測表現" src="images/report-neff.png" /></a></td>
+</tr>
+<tr>
+<td>選股 · 資金流</td>
+<td>基金持倉增持</td>
+<td>關注公募持倉佔比連續兩個報告期上升的公司。</td>
+<td><a href="images/report-fund-increase.png"><img alt="基金持倉增持回測表現" src="images/report-fund-increase.png" /></a></td>
+</tr>
+<tr>
+<td>擇時 · 複合</td>
+<td>赫爾均線趨勢</td>
+<td>觀察赫爾均線相對前值的升降。</td>
+<td><a href="images/report-hull.png"><img alt="赫爾均線趨勢回測表現" src="images/report-hull.png" /></a></td>
+</tr>
+<tr>
+<td>擇時 · 趨勢跟蹤</td>
+<td>指數均線金叉</td>
+<td>以短期與長期指數移動平均線的交叉跟蹤趨勢。</td>
+<td><a href="images/report-ema.png"><img alt="指數均線金叉回測表現" src="images/report-ema.png" /></a></td>
+</tr>
+<tr>
+<td>擇時 · 趨勢跟蹤</td>
+<td>半趨勢通道翻轉</td>
+<td>用高低價格的平滑通道識別多空轉換。</td>
+<td><a href="images/report-halftrend.png"><img alt="半趨勢通道翻轉回測表現" src="images/report-halftrend.png" /></a></td>
+</tr>
+<tr>
+<td>擇時 · 趨勢跟蹤</td>
+<td>SuperTrend 趨勢線</td>
+<td>觀察價格穿越基於 ATR 的軌道時，趨勢方向是否翻轉。</td>
+<td><a href="images/report-supertrend.png"><img alt="SuperTrend 趨勢線回測表現" src="images/report-supertrend.png" /></a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>歷史回測精選</strong>　按上表四個選股示例與四個擇時示例各自的年化收益，分別選取低 PB（16.0%，最大回撤 17.4%）與赫爾均線趨勢（19.1%，最大回撤 25.7%）。低 PB 是組合收益，赫爾均線報告展示 100 個標的的均值；兩者統計口徑不同。</p>
+<p><a href="images/report-low-pb.png"><img alt="低 PB · 收益、風險與淨值走勢" src="images/report-low-pb.png" /></a></p>
+<p><a href="images/report-hull.png"><img alt="赫爾均線趨勢 · 總體與分組表現" src="images/report-hull.png" /></a></p>
+<p><a name="equities"></a></p>
+<h2>◎ 個股研究與跟蹤</h2>
+<p>在個股研究頁，你可以把股價變化與公司基本面對照起來。例如：「過去一年，公司股價相對滬深 300 的變化，是否與主營業務收入和利潤變化一致？」</p>
+<p>從概覽進入行情、技術與籌碼、資金、財務、估值、研報與預期、股東、機構持倉或公司事件。下圖以貴州茅臺為例，可直接看到行情摘要、價格對比、公司資料與主營構成。</p>
+<p><a href="https://vicalpha.com/stock/600519.SH"><strong>開始個股研究與跟蹤</strong></a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>觀察維度</th>
+<th>可用工具</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>公司研究</td>
+<td>財務、估值、研報與預期、股東及機構持倉。</td>
+</tr>
+<tr>
+<td>價格與趨勢</td>
+<td>K 線、均線、布林帶及復權切換。</td>
+</tr>
+<tr>
+<td>量能與動量</td>
+<td>成交量、MACD、KDJ 和 RSI 等指標。</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="images/stock-page.png"><img alt="貴州茅臺 · 個股研究與跟蹤完整頁面" src="images/stock-page.png" /></a></p>
+<p><a name="signals"></a></p>
+<h2>◉ 實時訊號提醒</h2>
+<p>你可以用自然語言定義關注條件。例如：「當自選股滿足我的擇時策略入場條件時提醒我。」平臺持續跟蹤條件，在訊號觸發時提醒你。</p>
+<p>在訊號頁，可以從訊號流開始，再用類別、方向和強度縮小範圍；想比較多隻股票時，也可以切換列表或熱力檢視。</p>
+<p><a href="https://vicalpha.com/signal"><strong>檢視交易訊號</strong></a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>篩選維度</th>
+<th>可選範圍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>訊號來源</td>
+<td>策略、技術、形態、量價、資金、事件。</td>
+</tr>
+<tr>
+<td>閱讀方式</td>
+<td>按方向與強度篩選，按股票合併或逐條檢視。</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="images/signal-page.png"><img alt="實時訊號 · 滬深 300 訊號流與篩選完整頁面" src="images/signal-page.png" /></a></p>
+<p><a name="tasks"></a></p>
+<h2>◷ 定時研究任務</h2>
+<p>把重複研究寫成一條帶頻率的指令。例如：「每個交易日收盤後，覆盤 A 股市場廣度、成交額和領漲行業。」</p>
+<p>從任務頁點「新建任務」描述需求。已有任務可以按型別、頻率和執行狀態查詢，便於檢查哪些研究仍在跟蹤、哪些需要處理。</p>
+<p><a href="https://vicalpha.com/jobs"><strong>開始設定你的第一個定時任務</strong></a></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>任務管理</th>
+<th>可用選項</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>研究型別</td>
+<td>報告、選股、回測與策略、簡報等。</td>
+</tr>
+<tr>
+<td>執行頻率</td>
+<td>單次、每天、每個交易日、每週、每月或自定義。</td>
+</tr>
+<tr>
+<td>執行狀態</td>
+<td>啟用、已暫停、異常、已停止。</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="images/jobs-page.png"><img alt="定時研究任務 · 新建入口、頻率與任務狀態" src="images/jobs-page.png" /></a></p>
+<p><a href="https://vicalpha.com/">開啟 VicAlpha，開始研究 ↗</a></p></main><script>
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const observer = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('arrived');
+        observer.unobserve(entry.target);
+      }
+    }
+  });
+  document.querySelectorAll('main h2, main h3').forEach(title => observer.observe(title));
+}
+</script></html>

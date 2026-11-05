@@ -1,203 +1,219 @@
-[![VicAlpha AI 投研工作台，公募抱团与美股 13F 机构持仓界面](images/desk-highlights.png)](https://vicalpha.com/)
+[English](README.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
-## 为机构级投资研究而设计的 AI 原生投研系统
+[![VicAlpha research desks](images/desk-highlights.png)](https://vicalpha.com/)
 
-在 VicAlpha，你可以用自然语言分析公司与市场、开发并回测策略、构建专属投研台，也可以直接描述需要关注的信号。平台实时跟踪你设定的条件，在信号触发时提醒你。
+<h1 align="center">VicAlpha · AI-Native Investment Research</h1>
 
-多市场数据库与底层知识库共同构成 VicAlpha 的研究基础。数据库覆盖 A 股、港股和美股，以及 ETF、基金等投资品种，为跨市场分析、持仓研究和策略回测提供数据；知识库为 AI 分析提供研究背景，帮助研究者结合上下文解读数据。
+<p align="center"><b>A research workspace designed for institutional investment workflows</b></p>
 
-例如，研究行业轮动时，可以先问「近期哪些行业的资金流入在加速？」，再要求把观察指标整理成投研台，开发并回测一套轮动策略，最后设置信号：「当行业满足这套策略的入选条件时提醒我。」
+**Research markets, develop strategies and build research desks in natural language.** Describe a signal and VicAlpha tracks the condition in real time, alerting you when it fires.
 
-**使用 [VicAlpha](https://vicalpha.com/) 开启专业投研与交易工作流。**
+The multi-market database covers US, Hong Kong and mainland China equities, ETFs and funds. A research knowledge base provides context for company analysis, holdings research and backtests.
 
-## 产品能力结构
+> **Sector rotation**　“Which industries are seeing accelerating inflows? Put them on a desk, backtest a rotation strategy, and alert me when an industry qualifies.”
 
-多市场数据库与知识库提供研究资料，Sandbox（沙箱）提供研究执行环境。上层工作空间将这些基础能力与投研 Skills、策略回测和持续跟踪工具结合。
+**Start your investment research workflow with [VicAlpha](https://vicalpha.com/).**
 
-```mermaid
-flowchart TB
-    user["用自然语言提出研究需求"] --> workspace["VicAlpha · AI 投研工作空间"]
-    workspace --> research["研究与分析"]
-    workspace --> strategy["策略开发"]
-    workspace --> tracking["持续跟踪"]
-    research --> desks["调用投研 Skills<br/>分析公司与市场 · 构建投研台"]
-    strategy --> test["选股与择时规则<br/>策略回测 · 收益与风险评估"]
-    tracking --> alerts["事件跟踪 · 定时任务<br/>实时信号提醒与复盘"]
-    data[("多市场数据库<br/>A 股 · 港股 · 美股 · ETF · 基金")] -. 研究数据 .-> workspace
-    kb[("知识库")] -. 研究背景 .-> workspace
-    sandbox["Sandbox 沙箱"] -. 执行环境 .-> workspace
-```
+[Capabilities](#capabilities)　·　[Architecture](#architecture)　·　[Research desks](#desks)　·　[Strategies](#strategies)　·　[Signals](#signals)
 
-## 研究工作空间与广场
+<a name="capabilities"></a>
 
-你可以用自然语言发起研究，再沿同一条会话追问依据。例如：「今天半导体板块的上涨，是少数权重股带动，还是多数成分股都在涨？」
+## ✦ Core capabilities
 
-如果想先看一份成品，可以从研究广场浏览市场复盘、产业链报告和策略成果。回到工作空间，可以把自己的研究问题、会话和成果放在一起。
-
-[**开始你的第一项研究**](https://vicalpha.com/)
-
-| 研究入口 | 适合做什么 |
-| --- | --- |
-| 研究广场 | 按成果类型浏览公开研究，找到值得继续追问的问题。 |
-| 工作空间 | 从新会话提出假设，保留上下文，从已有成果回到来源会话。 |
-
-<table><tr><td width="50%" valign="top"><a href="images/research-plaza.png"><img src="images/research-plaza.png" alt="研究广场 · 浏览成果" width="100%"></a><br><sub>研究广场 · 浏览成果</sub></td><td width="50%" valign="top"><a href="images/workspace.png"><img src="images/workspace.png" alt="工作空间 · 发起研究" width="100%"></a><br><sub>工作空间 · 发起研究</sub></td></tr></table>
-
-## 投研 Skills
-
-你可以用自然语言指定研究任务。例如：「用财报体检分析这家公司，核对上期管理层承诺，并列出本期需要追问的异常变化。」
-
-也可以直接选用 Skills 库中的 15 个官方模板。选择模板后即可开始对话，再补充标的、报告期或研究假设。
-
-[**选择一个 Skill 开始研究**](https://vicalpha.com/skills)
-
-| 官方分类 | 模板数 | 适用任务 |
+| 🔎 Research | 📊 Strategy development | 📡 Monitoring |
 | --- | --- | --- |
-| 个股分析 | 6 | 公司一页纸、财报体检、技术面分析及投资论点论证。 |
-| 市场研究 | 4 | 盘后复盘、市场环境研判与次日主线筛选。 |
-| 资金流向 | 3 | 分析资金流向，跟踪国家队及龙虎榜动向。 |
-| 投研台 | 2 | 围绕需要长期观察的问题开展投研台研究。 |
+| **15 research Skills** · Company, financial, market and flow analysis | **Natural-language strategies** · Define selection and timing rules and backtest them | **Live signals** · Filter by direction, strength and event |
+| **19 desk entries** · Build or explore thematic workspaces | **Public strategies** · Inspect rules, NAV, drawdowns and groups | **Scheduled research** · Run on trading days or a custom schedule |
 
-[![官方 Skills · 模板与示例问题](images/skills-library.png)](images/skills-library.png)
+<a name="architecture"></a>
 
-## 投研台
+## ◇ Platform structure
 
-你可以用自然语言构建自己的机构级投研台。描述你想研究的问题、需要对照的指标和希望跟踪的信号，例如「帮我搭建一个行业轮动投研台，把市场广度、行业资金流和择时信号放在一起」。
+Market data and the knowledge base supply research inputs. Sandbox provides a research execution environment. The workspace brings these together for analysis, desk construction, strategy development and monitoring.
 
-你也可以直接使用[研究广场](https://vicalpha.com/plaza)里的现成投研台。下表按研究用途整理了官网发现目录中的 19 个投研台（2026 年 11 月 5 日），点击名称即可进入，部分入口需要登录。
+[![VicAlpha product structure](images/platform-structure-en.png)](images/platform-structure-en.png)
 
-[**开始构建自己的第一个投研台**](https://vicalpha.com/tracker)
+[View Mermaid source](images/platform-structure-en.mmd)
 
-### 市场与策略
+<a name="workspace"></a>
 
-| 投研台 | 研究问题 | 台内导航与专题 |
-| --- | --- | --- |
-| [A 股行情综合屏](https://vicalpha.com/dashboard/trk_01M544AT6G7NJDN1DGTHD3TZWJ) | 市场涨跌由哪些板块带动？ | 行情、情绪、板块、资金、龙虎榜 |
-| [情绪温度计](https://vicalpha.com/dashboard/trk_01M6GATFGCSW9T3W052JCYZP3D) | 市场情绪处于什么位置？ | 温度总览、维度分解、指标明细、信号事件、历史复盘 |
-| [涨停板](https://vicalpha.com/dashboard/trk_01M652CD3DX0AXP42X0KFD3ZYT) | 连板高度和题材热度如何演变？ | 情绪总览、连板天梯、题材主线、个股明细、次日表现 |
-| [XHN-A股择时系统](https://vicalpha.com/live/trk_01M0Z1BYTTESV4KJRNQFY17243) | 左侧、同步与右侧信号何时一致？ | 综合看板、左侧抄底、同步跟踪、右侧逃顶、使用方法、指标体系 |
-| [逆向投资](https://vicalpha.com/dashboard/trk_01M67TX7K5KDJ9TM5ZESM0CR7V) | 哪些低温行业出现拐点信号？ | 逆向总览、市场温度、行业逆向、候选榜、陷阱排雷、拐点信号 |
-| [A 股产业链图谱](https://vicalpha.com/dashboard/trk_01M1R26Z79TDB92XS5M3ZA7AMJ) | 同一条产业链的上下游有哪些环节？ | 选择产业链、上中下游图谱。页面提供环节与产品的下钻说明 |
+## ◈ Research workspace and plaza
 
-<table><tr><td width="50%" valign="top"><a href="images/market-temperature.png"><img src="images/market-temperature.png" alt="情绪温度计 · 六维贡献" width="100%"></a><br><sub>情绪温度计 · 六维贡献</sub></td><td width="50%" valign="top"><a href="images/timing-desk.png"><img src="images/timing-desk.png" alt="三阶段择时 · 综合评分" width="100%"></a><br><sub>三阶段择时 · 综合评分</sub></td></tr></table>
+Ask a question and follow the evidence in the same conversation. For example, “Did a few large semiconductor stocks drive today’s advance, or did most constituents participate?”
 
-### 资金与交易结构
+Browse market reviews, industry-chain reports and strategy research in the plaza. In your workspace, each research artifact retains a path to its source conversation.
 
-| 投研台 | 研究问题 | 台内导航与专题 |
-| --- | --- | --- |
-| [A股资金流投研台](https://vicalpha.com/live/trk_01M0KE8SD5E4FC9TYVX82JSR05) | 如何从资金需求、供给与广度形成日度判断？ | 日度报告共 12 节：结论、增量、供给、方向、承接、主体、行为、广度、趋势、阶段、交易、口径 |
-| [A 股资金流](https://vicalpha.com/dashboard/trk_01M5MH0K50GYYV6EMYT674E7KP) | 哪些渠道和板块的资金动向值得跟踪？ | 总览、主力动向、板块跟踪、个股热图、两融杠杆、跨境资金、ETF 资金、龙虎榜、产业资本 |
-| [A 股融资融券](https://vicalpha.com/dashboard/trk_01M61AJ1TDEH04E6QTJ82DAVJQ) | 杠杆周期走到哪里？哪些标的风险较高？ | 总览、杠杆周期、行业两融、个股两融、风险监测、个股详情 |
-| [全 A 筹码结构](https://vicalpha.com/dashboard/trk_01M68EM7X3XGD7ZSFKGWQ0YMHR) | 不同板块的持仓成本和获利比例有何差异？ | 筹码总览、行业筹码、筹码筛选、个股筹码 |
-| [A 股交易拥挤度](https://vicalpha.com/dashboard/trk_01M5NRYV1THPTBNSA5QZTZXCQC) | 拥挤集中在哪些行业、风格和个股？ | 总览、市场拥挤、行业拥挤、行业详情、风格拥挤、个股拥挤、个股详情、机构持仓 |
-| [股票供给](https://vicalpha.com/dashboard/trk_01M6K5FQ4ZM6J04MDHVCFX88Z8) | 如何跟踪发行、减持、回购与解禁压力？ | 官网已列出；打开后提示「该台暂未接入」 |
-| [股票ETF资金流](https://vicalpha.com/dashboard/trk_01M6J2TE6YHG3N1M1PTQYYR80Q) | 如何观察 ETF 净申购与成分股被动需求？ | 官网已列出；打开后提示「该台暂未接入」 |
+[**Start your first research session**](https://vicalpha.com/)
 
-<table><tr><td width="50%" valign="top"><a href="images/market-monitor.png"><img src="images/market-monitor.png" alt="资金流 · 市场总览" width="100%"></a><br><sub>资金流 · 市场总览</sub></td><td width="50%" valign="top"><a href="images/flow-direction.png"><img src="images/flow-direction.png" alt="资金流 · 行业方向" width="100%"></a><br><sub>资金流 · 行业方向</sub></td></tr></table>
-
-[查看更多资金流趋势与阶段](images/flow-breadth.png)
-
-### 机构与持仓
-
-| 投研台 | 研究问题 | 台内导航与专题 |
-| --- | --- | --- |
-| [公募抱团](https://vicalpha.com/dashboard/trk_01M61AH34C7CZVPRZABP2H6FNV) | 公募持仓集中在哪里？拥挤组的表现如何？ | 抱团总览、个股拥挤度、个股透视、基金与资金、行业与仓位、抱团指数 |
-| [A 股公募持仓](https://vicalpha.com/dashboard/trk_01M6BNGVY94CDVMMTZFJX6VPV6) | 不同基金公司怎样配置行业和个股？ | 持仓总览、公募排行、持仓详情、个股持仓、行业动向、持仓热力、公司比较 |
-| [美股 13F 机构持仓](https://vicalpha.com/dashboard/trk_01M1WKA7BJYSXWN5T2XN6EED58) | 哪些机构调整了持仓？行业分布如何变化？ | 13F 总览、机构排行、机构详情、个股持仓、行业动向、持仓动向、机构对比 |
-| [国家队全景](https://vicalpha.com/dashboard/trk_01M6FBPM1THJ7KECTFKEQB8DMB) | 国家队通过哪些 ETF 和持股组合参与市场？ | 全景总览、ETF 托底、持股组合、持仓全景、调仓动向、主体详情、个股透视 |
-| [A 股十大流通股东](https://vicalpha.com/dashboard/trk_01M55196PFQ2GNCF02D9YJMPMM) | 重要股东持有哪些标的？筹码是否更集中？ | 股东总览、主体排行、主体详情、个股股东、行业动向、筹码集中度、事件信号 |
-| [机构调研](https://vicalpha.com/dashboard/trk_01M6MGXHV4JVMCNXJPVQ0K27FG) | 哪些公司受到机构调研关注？ | 官网已列出；打开后提示「该台暂未接入」 |
-
-<table><tr><td width="50%" valign="top"><a href="images/fund-holdings.png"><img src="images/fund-holdings.png" alt="公募抱团 · 拥挤度与收益" width="100%"></a><br><sub>公募抱团 · 拥挤度与收益</sub></td><td width="50%" valign="top"><a href="images/us-holdings.png"><img src="images/us-holdings.png" alt="美股 13F · 机构持仓" width="100%"></a><br><sub>美股 13F · 机构持仓</sub></td></tr></table>
-
----
-
-## AI 策略构建与回测
-
-你可以从自己的交易假设开始，也可以选用官方策略作为起点。两种方式都可以结合历史回测，检查规则在什么条件下有效，以及为此承担了多大回撤。
-
-### 自定义策略
-
-你可以把交易想法写成可检验的规则。例如：「回测双均线择时策略，以沪深 300 为基准，比较不同参数下的收益和最大回撤。」
-
-在工作空间选择「策略构建 → 策略回测」输入需求。也可以先读已有官方报告，看清策略采用的参数、适用行情和失效场景。
-
-[**进入工作空间，开始策略回测**](https://vicalpha.com/)
-
-| 回测环节 | 要说明或检查的内容 |
+| Entry | Use |
 | --- | --- |
-| 提出需求 | 标的或样本池、比较基准、买卖规则，以及希望比较的参数。 |
-| 解读报告 | 把收益与最大回撤、夏普放在一起看，再检查交易规则和样本表现分布。 |
+| Research plaza | Discover published research by artifact type. |
+| Workspace | Develop a hypothesis and revisit the discussion behind a result. |
 
-<table><tr><td width="50%" valign="top"><a href="images/ai-backtest.png"><img src="images/ai-backtest.png" alt="自然语言输入 · 双均线需求示例" width="100%"></a><br><sub>自然语言输入 · 双均线需求示例</sub></td><td width="50%" valign="top"><a href="images/strategy-report.png"><img src="images/strategy-report.png" alt="已有官方报告 · 赫尔均线趋势" width="100%"></a><br><sub>已有官方报告 · 赫尔均线趋势</sub></td></tr></table>
+<table><tr><td width="50%" valign="top"><a href="images/research-plaza.png"><img src="images/research-plaza.png" width="100%" alt="Discover published research"></a><br><sub>Discover published research</sub></td><td width="50%" valign="top"><a href="images/workspace.png"><img src="images/workspace.png" width="100%" alt="Start a research conversation"></a><br><sub>Start a research conversation</sub></td></tr></table>
 
-[![已有报告 · 样本表现分布](images/backtest.png)](images/backtest.png)
+<a name="skills"></a>
 
-### 内置策略
+## ⌘ Research Skills
 
-你可以从现成策略出发，再用自己的问题检验规则。例如：「比较低 PB 和 Piotroski F-Score：两者怎样选股，回撤表现有什么差异？」
+Choose from 15 official templates, then specify the security, reporting period and hypothesis. Try “Review this company’s financial statements and check whether management delivered on its prior commitments.”
 
-官方策略库分别提供选股和择时策略。打开报告可以查看规则、历史收益与回撤，也可以克隆策略继续研究。下表列出八个示例。
+[**Choose a research Skill**](https://vicalpha.com/skills)
 
-[**浏览官方策略库**](https://vicalpha.com/strategies)
-
-| 类型 | 策略 | 规则 |
+| Category | Templates | Examples |
 | --- | --- | --- |
-| 选股 · 价值 | 低 PB | 按账面价值相对市值筛选股票。 |
-| 选股 · 质量 | Piotroski F-Score | 用九项财务信号衡量公司质量。 |
-| 选股 · 价值 | 聂夫总回报 | 结合低市盈率、适度增长和分红筛选公司。 |
-| 选股 · 资金流 | 基金持仓增持 | 关注公募持仓占比连续两个报告期上升的公司。 |
-| 择时 · 复合 | 赫尔均线趋势 | 观察赫尔均线相对前值的升降。 |
-| 择时 · 趋势跟踪 | 指数均线金叉 | 以短期与长期指数移动平均线的交叉跟踪趋势。 |
-| 择时 · 趋势跟踪 | 半趋势通道翻转 | 用高低价格的平滑通道识别多空转换。 |
-| 择时 · 趋势跟踪 | SuperTrend 趋势线 | 观察价格穿越基于 ATR 的轨道时，趋势方向是否翻转。 |
+| Company analysis | 6 | Company briefs, financial reviews, technical analysis and investment theses. |
+| Market research | 4 | Closing reviews, market regimes and themes for the next session. |
+| Capital flows | 3 | Flows, state-backed investors and exchange trading disclosures. |
+| Research desks | 2 | Ongoing investigation of a theme. |
 
-<table><tr><td width="50%" valign="top"><a href="images/selection.png"><img src="images/selection.png" alt="官方策略 · 选股" width="100%"></a><br><sub>官方策略 · 选股</sub></td><td width="50%" valign="top"><a href="images/timing.png"><img src="images/timing.png" alt="官方策略 · 择时" width="100%"></a><br><sub>官方策略 · 择时</sub></td></tr></table>
+[![Official Skills and example questions](images/skills-library.png)](images/skills-library.png)
 
-## 自选行情
+<a name="desks"></a>
 
-把正在研究的标的加入自选，沿同一交易日对齐价格、成交量和技术指标。需要进一步分析时，可以在工作空间追问：「这段上涨是否伴随成交量放大？」
+## ▦ Research desks
 
-自选页支持切换周期、复权方式和指标。看短期波动时可用日线，对照更长趋势时可切换周线或月线。
+Build a desk by describing the question, indicators and signals you want to follow. For example, “Build a sector-rotation desk with market breadth, industry flows and timing signals.”
 
-[**打开自选行情**](https://vicalpha.com/watchlist)
+You can also open a ready-made desk in the [research plaza](https://vicalpha.com/plaza). The discovery directory listed 19 desks on 5 November 2026. Names below link directly to the platform. Some require sign-in.
 
-| 观察维度 | 可用工具 |
+[**Build your first research desk**](https://vicalpha.com/tracker)
+
+### Markets and strategies
+
+| Research desk | Research question | Views and topics |
+| --- | --- | --- |
+| [A-share market screen](https://vicalpha.com/dashboard/trk_01M544AT6G7NJDN1DGTHD3TZWJ) | Which sectors drive the market? | Prices, sentiment, sectors, flows, exchange trading disclosures |
+| [Sentiment thermometer](https://vicalpha.com/dashboard/trk_01M6GATFGCSW9T3W052JCYZP3D) | How hot or cold is the market? | Overview, dimensions, indicators, signal events, historical reviews |
+| [Limit-up monitor](https://vicalpha.com/dashboard/trk_01M652CD3DX0AXP42X0KFD3ZYT) | Which themes sustain consecutive limit-up moves? | Sentiment, streak ladder, themes, stocks, next-day outcomes |
+| [XHN A-share timing](https://vicalpha.com/live/trk_01M0Z1BYTTESV4KJRNQFY17243) | When do early, concurrent and exit signals agree? | Overview, early entries, trend tracking, exits, methodology, indicators |
+| [Contrarian investing](https://vicalpha.com/dashboard/trk_01M67TX7K5KDJ9TM5ZESM0CR7V) | Where is weak sentiment turning? | Overview, market temperature, sectors, candidates, traps, turning points |
+| [A-share industry chains](https://vicalpha.com/dashboard/trk_01M1R26Z79TDB92XS5M3ZA7AMJ) | How do suppliers and customers fit together? | Choose a chain and explore upstream, midstream and downstream products |
+
+<table><tr><td width="50%" valign="top"><a href="images/market-temperature.png"><img src="images/market-temperature.png" width="100%" alt="Market temperature"></a><br><sub>Market temperature</sub></td><td width="50%" valign="top"><a href="images/timing-desk.png"><img src="images/timing-desk.png" width="100%" alt="Timing scores"></a><br><sub>Timing scores</sub></td></tr></table>
+
+### Flows and trading structure
+
+| Research desk | Research question | Views and topics |
+| --- | --- | --- |
+| [Daily A-share flow report](https://vicalpha.com/live/trk_01M0KE8SD5E4FC9TYVX82JSR05) | How do supply, demand and breadth interact? | 12 report sections covering conclusions, new demand, supply, direction, absorption, participants, behavior, breadth, trends, phases, trading and definitions |
+| [A-share capital flows](https://vicalpha.com/dashboard/trk_01M5MH0K50GYYV6EMYT674E7KP) | Which channels and sectors drive flows? | Overview, large trades, sectors, stock heatmap, margin, cross-border flows, ETFs, exchange disclosures, corporate activity |
+| [A-share margin financing](https://vicalpha.com/dashboard/trk_01M61AJ1TDEH04E6QTJ82DAVJQ) | Where is leverage building? | Overview, leverage cycle, industry and stock financing, risk monitoring, stock detail |
+| [A-share cost basis](https://vicalpha.com/dashboard/trk_01M68EM7X3XGD7ZSFKGWQ0YMHR) | How do investor costs vary across sectors? | Market overview, sector costs, screening, stock detail |
+| [A-share trading crowding](https://vicalpha.com/dashboard/trk_01M5NRYV1THPTBNSA5QZTZXCQC) | Which trades are most crowded? | Market, industries, styles, stocks, institutional holdings and detail views |
+| [Equity supply](https://vicalpha.com/dashboard/trk_01M6K5FQ4ZM6J04MDHVCFX88Z8) | How do issuance, disposals and buybacks affect supply? | Listed in discovery. The platform currently marks this desk as unavailable. |
+| [Equity ETF flows](https://vicalpha.com/dashboard/trk_01M6J2TE6YHG3N1M1PTQYYR80Q) | How do ETF subscriptions affect constituent demand? | Listed in discovery. The platform currently marks this desk as unavailable. |
+
+<table><tr><td width="50%" valign="top"><a href="images/market-monitor.png"><img src="images/market-monitor.png" width="100%" alt="Daily flow overview"></a><br><sub>Daily flow overview</sub></td><td width="50%" valign="top"><a href="images/flow-direction.png"><img src="images/flow-direction.png" width="100%" alt="Sector flows"></a><br><sub>Sector flows</sub></td></tr></table>
+
+[View flow trends and market phases](images/flow-breadth.png)
+
+### Institutions and holdings
+
+| Research desk | Research question | Views and topics |
+| --- | --- | --- |
+| [Fund crowding](https://vicalpha.com/dashboard/trk_01M61AH34C7CZVPRZABP2H6FNV) | How concentrated are fund holdings? | Overview, stock crowding, stock detail, fund flows, sector allocations, crowding index |
+| [A-share mutual fund holdings](https://vicalpha.com/dashboard/trk_01M6BNGVY94CDVMMTZFJX6VPV6) | How do managers allocate across sectors? | Overview, manager rankings, fund and stock holdings, sectors, heatmap, manager comparison |
+| [US institutional holdings (13F)](https://vicalpha.com/dashboard/trk_01M1WKA7BJYSXWN5T2XN6EED58) | Which institutions changed positions? | Overview, institution rankings and profiles, stocks, sectors, position changes, institution comparison |
+| [State-backed investors](https://vicalpha.com/dashboard/trk_01M6FBPM1THJ7KECTFKEQB8DMB) | How do ETFs and equity portfolios contribute? | Overview, ETF support, portfolios, holdings, allocation changes, investor and stock detail |
+| [Top ten tradable shareholders](https://vicalpha.com/dashboard/trk_01M55196PFQ2GNCF02D9YJMPMM) | Who owns the float and how concentrated is it? | Overview, investor rankings and profiles, stock ownership, sectors, concentration and events |
+| [Institutional research visits](https://vicalpha.com/dashboard/trk_01M6MGXHV4JVMCNXJPVQ0K27FG) | Which companies attract institutional interest? | Listed in discovery. The platform currently marks this desk as unavailable. |
+
+<table><tr><td width="50%" valign="top"><a href="images/fund-holdings.png"><img src="images/fund-holdings.png" width="100%" alt="Fund holdings and crowding"></a><br><sub>Fund holdings and crowding</sub></td><td width="50%" valign="top"><a href="images/us-holdings.png"><img src="images/us-holdings.png" width="100%" alt="Quarterly 13F holdings"></a><br><sub>Quarterly 13F holdings</sub></td></tr></table>
+
+<a name="strategies"></a>
+
+## ∆ AI strategy development and backtesting
+
+Start with an investment hypothesis or an existing public strategy, then test the conditions under which the rule worked and the drawdowns it incurred.
+
+### Custom strategies
+
+Specify the universe, benchmark, rules and parameters in plain language. For example, “Backtest a dual moving-average rule against the CSI 300. Compare returns and maximum drawdown across parameter choices.”
+
+[**Start strategy development**](https://vicalpha.com/)
+
+| Stage | What to check |
 | --- | --- |
-| 价格与趋势 | K 线、均线、布林带及复权切换。 |
-| 量能与动量 | 成交量、MACD、KDJ 和 RSI 等指标。 |
+| Define the test | Universe, benchmark, entry and exit rules and parameter choices. |
+| Read the report | Returns, drawdown, Sharpe ratio, transaction rules and the distribution of outcomes. |
 
-[![自选行情 · 同期价格、成交量与 MACD](images/watchlist.png)](images/watchlist.png)
+<table><tr><td width="50%" valign="top"><a href="images/ai-backtest.png"><img src="images/ai-backtest.png" width="100%" alt="A natural-language backtest request"></a><br><sub>A natural-language backtest request</sub></td><td width="50%" valign="top"><a href="images/strategy-report.png"><img src="images/strategy-report.png" width="100%" alt="A separate official Hull trend report"></a><br><sub>A separate official Hull trend report</sub></td></tr></table>
 
-## 实时信号提醒
+**From an actual session: SuperTrend on a gold ETF.** Strategy development is on the left and its report is on the right. From 8 September 2023 to 7 September 2026, the historical return was 29.29% and the maximum drawdown was 30.72%.
 
-你可以用自然语言定义关注条件。例如：「当自选股满足我的择时策略入场条件时提醒我。」平台持续跟踪条件，在信号触发时提醒你。
+[![Gold ETF development conversation and backtest report](images/gold-etf-session.png)](images/gold-etf-session.png)
 
-在信号页，可以从信号流开始，再用类别、方向和强度缩小范围；想比较多只股票时，也可以切换列表或热力视图。
+### Public strategies
 
-[**查看交易信号**](https://vicalpha.com/signal)
+Use a public strategy as a starting point. Inspect its rules and historical report, or clone it for further research. For example, compare low price-to-book with the Piotroski F-Score and investigate how their drawdowns differ.
 
-| 筛选维度 | 可选范围 |
+[**Explore the public strategy library**](https://vicalpha.com/strategies)
+
+[![Strategy center and official categories](images/strategy-center.png)](images/strategy-center.png)
+
+| Type | Strategy | Rule | Historical report |
+| --- | --- | --- | --- |
+| Selection · Value | Low price-to-book | Screen for book value relative to market price. | [![Low price-to-book backtest](images/report-low-pb.png)](images/report-low-pb.png) |
+| Selection · Quality | Piotroski F-Score | Score financial strength using nine accounting signals. | [![Piotroski F-Score backtest](images/report-f-score.png)](images/report-f-score.png) |
+| Selection · Value | Neff total return | Combine low earnings multiples, moderate growth and dividends. | [![Neff total return backtest](images/report-neff.png)](images/report-neff.png) |
+| Selection · Flows | Increasing fund ownership | Find companies with rising fund ownership for two reporting periods. | [![Increasing fund ownership backtest](images/report-fund-increase.png)](images/report-fund-increase.png) |
+| Timing · Composite | Hull moving-average trend | Track changes in the direction of a smoothed Hull average. | [![Hull moving-average trend backtest](images/report-hull.png)](images/report-hull.png) |
+| Timing · Trend | EMA crossover | Follow crossings of short and long exponential moving averages. | [![EMA crossover backtest](images/report-ema.png)](images/report-ema.png) |
+| Timing · Trend | HalfTrend channel reversal | Identify reversals using a smoothed high-low channel. | [![HalfTrend channel reversal backtest](images/report-halftrend.png)](images/report-halftrend.png) |
+| Timing · Trend | SuperTrend | Track trend flips at ATR-based price bands. | [![SuperTrend backtest](images/report-supertrend.png)](images/report-supertrend.png) |
+
+**Selected historical results.** Of the four examples shown in each category, low P/B led stock selection by annualized return (16.0%, maximum drawdown 17.4%). Hull trend led timing (19.1%, maximum drawdown 25.7%). The first is a portfolio result; the second averages 100 securities.
+
+[![Low P/B portfolio and benchmark performance](images/report-low-pb.png)](images/report-low-pb.png)
+
+[![Hull trend aggregate and grouped performance](images/report-hull.png)](images/report-hull.png)
+
+<a name="equities"></a>
+
+## ◎ Equity research and monitoring
+
+Compare stock performance with the underlying business. For example, “Did earnings and revenue move in step with the share price relative to the CSI 300?” The Kweichow Moutai overview below combines quotes, a benchmark comparison, company information and revenue composition.
+
+[**Explore a stock research page**](https://vicalpha.com/stock/600519.SH)
+
+| View | Tools |
 | --- | --- |
-| 信号来源 | 策略、技术、形态、量价、资金、事件。 |
-| 阅读方式 | 按方向与强度筛选，按股票合并或逐条查看。 |
+| Company research | Financials, valuation, analyst expectations, shareholders, institutional ownership and events. |
+| Price and trend | Candlesticks, moving averages, Bollinger bands and price adjustments. |
+| Volume and momentum | Volume, MACD, KDJ and RSI. |
 
-[![信号页 · 类别、方向与强度](images/signals.png)](images/signals.png)
+[![Full company research page for Kweichow Moutai](images/stock-page.png)](images/stock-page.png)
 
-## 定时研究任务
+<a name="signals"></a>
 
-把重复研究写成一条带频率的指令。例如：「每个交易日收盘后，复盘 A 股市场广度、成交额和领涨行业。」
+## ◉ Real-time signal alerts
 
-从任务页点「新建任务」描述需求。已有任务可以按类型、频率和执行状态查找，便于检查哪些研究仍在跟踪、哪些需要处理。
+Define a condition in natural language, such as “Alert me when a stock on my watchlist meets the entry rules for my timing strategy.” VicAlpha monitors the condition and alerts you when it triggers.
 
-[**开始设置你的第一个定时任务**](https://vicalpha.com/jobs)
+[**View market signals**](https://vicalpha.com/signal)
 
-| 任务管理 | 可用选项 |
+| Filter | Choices |
 | --- | --- |
-| 研究类型 | 报告、选股、回测与策略、简报等。 |
-| 执行频率 | 单次、每天、每个交易日、每周、每月或自定义。 |
-| 运行状态 | 启用、已暂停、异常、已停止。 |
+| Signal source | Strategy, technicals, patterns, price and volume, capital flows and events. |
+| Display | Filter by direction and strength, group by security, or switch between feed, list and heatmap. |
 
-<table><tr><td width="50%" valign="top"><a href="images/scheduled-prompt.png"><img src="images/scheduled-prompt.png" alt="新建任务 · 指令示例" width="100%"></a><br><sub>新建任务 · 指令示例</sub></td><td width="50%" valign="top"><a href="images/jobs.png"><img src="images/jobs.png" alt="任务列表 · 频率与状态" width="100%"></a><br><sub>任务列表 · 频率与状态</sub></td></tr></table>
+[![Full CSI 300 signal feed and filters](images/signal-page.png)](images/signal-page.png)
 
-[打开 VicAlpha，开始研究 ↗](https://vicalpha.com/)
+<a name="tasks"></a>
+
+## ◷ Scheduled research
+
+Turn a recurring question into a task. Try “After each trading session, review A-share market breadth, turnover and leading sectors.” Choose New task and describe the research and frequency.
+
+[**Set up your first scheduled task**](https://vicalpha.com/jobs)
+
+| Task setting | Options |
+| --- | --- |
+| Type | Reports, stock selection, backtests, strategies and briefs. |
+| Frequency | Once, daily, each trading day, weekly, monthly or custom. |
+| Status | Enabled, paused, failed or stopped. |
+
+[![Full task center showing scheduling and status filters](images/jobs-page.png)](images/jobs-page.png)
+
+[Open VicAlpha ↗](https://vicalpha.com/)

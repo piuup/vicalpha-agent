@@ -1,0 +1,16 @@
+flowchart TB
+    D[("多市場資料庫")] --> W
+    K["研究知識庫"] --> W
+    S["Sandbox 執行環境"] --> W
+    W(["VicAlpha · 自然語言研究工作空間"])
+    W --> R["投研分析<br/>Skills · 個股與市場"]
+    W --> B["投研台<br/>自然語言建臺 · 專題看板"]
+    W --> T["策略開發與驗證<br/>選股擇時 · 回測引擎"]
+    W --> A["持續跟蹤與覆盤<br/>實時訊號 · 定時任務"]
+    classDef core fill:#123f36,color:#ffffff,stroke:#123f36,stroke-width:2px;
+    classDef base fill:#e6eee7,color:#173e34,stroke:#a9beb1;
+    classDef tool fill:#fafaf5,color:#183a32,stroke:#9cb5a7;
+    class W core;
+    class D,K,S base;
+    class R,B,T,A tool;
+    linkStyle default stroke:#719385,stroke-width:1.5px;

@@ -1,0 +1,16 @@
+flowchart TB
+    D[("Multi-market database")] --> W
+    K["Research knowledge base"] --> W
+    S["Sandbox environment"] --> W
+    W(["VicAlpha · AI research workspace"])
+    W --> R["Research<br/>Skills · Companies and markets"]
+    W --> B["Research desks<br/>Build thematic dashboards"]
+    W --> T["Strategy development<br/>Selection, timing and backtests"]
+    W --> A["Monitoring and review<br/>Live signals and scheduled tasks"]
+    classDef core fill:#123f36,color:#ffffff,stroke:#123f36,stroke-width:2px;
+    classDef base fill:#e6eee7,color:#173e34,stroke:#a9beb1;
+    classDef tool fill:#fafaf5,color:#183a32,stroke:#9cb5a7;
+    class W core;
+    class D,K,S base;
+    class R,B,T,A tool;
+    linkStyle default stroke:#719385,stroke-width:1.5px;
