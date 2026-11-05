@@ -6,6 +6,16 @@
 
 **[打开 VicAlpha ↗](https://vicalpha.com/)**　·　[浏览研究广场 ↗](https://vicalpha.com/plaza)
 
+## 平台实景
+
+**研究广场**　从示例问题开始研究，也可以按产业链、选股或择时回测筛选成果。
+
+[![研究广场官网截图](images/research-plaza.png)](images/research-plaza.png)
+
+**A 股资金流投研台**　同屏查看增量需求、成交分类、市场广度与融资净买入趋势。图中数据截至 2026 年 11 月 4 日。
+
+[![A 股资金流投研台官网截图](images/market-monitor.png)](images/market-monitor.png)
+
 ## 从你关心的问题开始
 
 | 你想弄清什么 | 可以从哪里入手 |
