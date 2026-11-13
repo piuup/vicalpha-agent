@@ -1,4 +1,4 @@
-[![VicAlpha AI-native investment research with illustrative valuation and sector rotation charts](images/desk-highlights-en.png)](https://vicalpha.com/)
+[![VicAlpha AI-native investment research with dark-mode valuation and sector rotation dashboards](images/desk-highlights-en.png)](https://vicalpha.com/)
 
 <h1 align="center">VicAlpha · AI-Native Investment Research</h1>
 
