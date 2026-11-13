@@ -1,4 +1,4 @@
-[![VicAlpha AI 投研工作台，公募抱團與美股 13F 機構持倉介面](images/desk-highlights.png)](https://vicalpha.com/)
+[![VicAlpha 投研工作台 · 深色估值全景與產業輪動](images/desk-highlights.png)](https://vicalpha.com/)
 
 <h1 align="center">VicAlpha · AI 原生投研工作台</h1>
 
@@ -23,7 +23,7 @@
 | 🔎 研究與分析 | 📊 策略與回測 | 📡 跟蹤與覆盤 |
 | --- | --- | --- |
 | **15 個投研 Skills** · 分析公司、財報、市場與資金流 | **自然語言開發** · 從選股、擇時規則到回測報告 | **實時訊號** · 按方向、強度、事件篩選 |
-| **19 個投研台入口** · 瀏覽或構建專題研究頁 | **公共策略** · 檢視引數、淨值、回撤與分組表現 | **定時研究** · 按交易日或自定義週期跟蹤 |
+| **22 個投研台入口** · 瀏覽或構建專題研究頁 | **公共策略** · 檢視引數、淨值、回撤與分組表現 | **定時研究** · 按交易日或自定義週期跟蹤 |
 
 <a name="architecture"></a>
 
@@ -50,7 +50,9 @@
 | 研究廣場 | 按成果型別瀏覽公開研究，找到值得繼續追問的問題。 |
 | 工作空間 | 從新會話提出假設，保留上下文，從已有成果回到來源會話。 |
 
-<table><tr><td width="50%" valign="top"><a href="images/research-plaza.png"><img src="images/research-plaza.png" alt="研究廣場 · 瀏覽成果" width="100%"></a><br><sub>研究廣場 · 瀏覽成果</sub></td><td width="50%" valign="top"><a href="images/workspace.png"><img src="images/workspace.png" alt="工作空間 · 發起研究" width="100%"></a><br><sub>工作空間 · 發起研究</sub></td></tr></table>
+廣場分別展示官方看板、社群報告與策略。可以依類型篩選或搜尋，回到工作空間繼續追問。
+
+<table><tr><td width="50%" valign="top"><a href="images/research-plaza-dark.png"><img src="images/research-plaza-dark.png" width="100%" alt="研究廣場的官方看板"></a><br><sub>研究廣場的官方看板</sub></td><td width="50%" valign="top"><a href="images/workspace-dark.png"><img src="images/workspace-dark.png" width="100%" alt="自然語言投研工作空間"></a><br><sub>自然語言投研工作空間</sub></td></tr></table>
 
 <a name="skills"></a>
 
@@ -69,7 +71,9 @@
 | 資金流向 | 3 | 分析資金流向，跟蹤國家隊及龍虎榜動向。 |
 | 投研台 | 2 | 圍繞需要長期觀察的問題開展投研台研究。 |
 
-[![官方 Skills · 模板與示例問題](images/skills-library.png)](images/skills-library.png)
+除了 15 個官方範本，也可以匯入自己的 Skill。支援不超過 1 MB 的 ZIP、Markdown 或文字檔，也可直接貼上研究方法。
+
+<table><tr><td width="50%" valign="top"><a href="images/skills-library-dark.png"><img src="images/skills-library-dark.png" width="100%" alt="官方 Skills 庫"></a><br><sub>官方 Skills 庫</sub></td><td width="50%" valign="top"><a href="images/skill-import-dark.png"><img src="images/skill-import-dark.png" width="100%" alt="匯入 Skill"></a><br><sub>匯入 Skill</sub></td></tr></table>
 
 <a name="desks"></a>
 
@@ -77,53 +81,64 @@
 
 你可以**用自然語言構建自己的機構級投研台**。描述你想研究的問題、需要對照的指標和希望跟蹤的訊號，例如「幫我搭建一個行業輪動投研台，把市場廣度、行業資金流和擇時訊號放在一起」。
 
-你也可以直接使用[研究廣場](https://vicalpha.com/plaza)裡的現成投研台。下表按研究用途整理了官網發現目錄中的 **19 個投研台**（2026 年 11 月 5 日），點選名稱即可進入，部分入口需要登入。
+[投研台發現目錄](https://vicalpha.com/tracker)截至 2026 年 11 月 13 日收錄 **22 個投研台**。目錄卡片可以預覽圖表與更新狀態，也可依主題篩選。下方直達連結可能需要登入。配圖以官網深色版為主，估值全景同時展示淺色版。
 
 [**開始構建自己的第一個投研台 ↗**](https://vicalpha.com/tracker)
 
 ### 市場與策略
 
-| 投研台 | 研究問題 | 臺內導航與專題 |
+| 投研台 | 研究問題 | 頁面與專題 |
 | --- | --- | --- |
-| [A 股行情綜合屏](https://vicalpha.com/dashboard/trk_01M544AT6G7NJDN1DGTHD3TZWJ) | 市場漲跌由哪些板塊帶動？ | 行情、情緒、板塊、資金、龍虎榜 |
-| [情緒溫度計](https://vicalpha.com/dashboard/trk_01M6GATFGCSW9T3W052JCYZP3D) | 市場情緒處於什麼位置？ | 溫度總覽、維度分解、指標明細、訊號事件、歷史覆盤 |
-| [漲停板](https://vicalpha.com/dashboard/trk_01M652CD3DX0AXP42X0KFD3ZYT) | 連板高度和題材熱度如何演變？ | 情緒總覽、連板天梯、題材主線、個股明細、次日表現 |
-| [XHN-A股擇時系統](https://vicalpha.com/live/trk_01M0Z1BYTTESV4KJRNQFY17243) | 左側、同步與右側訊號何時一致？ | 綜合看板、左側抄底、同步跟蹤、右側逃頂、使用方法、指標體系 |
-| [逆向投資](https://vicalpha.com/dashboard/trk_01M67TX7K5KDJ9TM5ZESM0CR7V) | 哪些低溫行業出現拐點訊號？ | 逆向總覽、市場溫度、行業逆向、候選榜、陷阱排雷、拐點訊號 |
-| [A 股產業鏈圖譜](https://vicalpha.com/dashboard/trk_01M1R26Z79TDB92XS5M3ZA7AMJ) | 同一條產業鏈的上下游有哪些環節？ | 選擇產業鏈、上中下游圖譜。頁面提供環節與產品的下鑽說明 |
+| [A 股行情](https://vicalpha.com/dashboard/trk_01M544AT6G7NJDN1DGTHD3TZWJ) | 市場漲跌由哪些板塊帶動？ | 行情、情緒、板塊、資金與龍虎榜 |
+| [市場狀態](https://vicalpha.com/dashboard/trk_01M6GATFGCSW9T3W052JCYZP3D) | 市場情緒處於什麼位置？ | 市場溫度、維度分解、指標明細、訊號事件與歷史復盤 |
+| [短線情緒](https://vicalpha.com/dashboard/trk_01M652CD3DX0AXP42X0KFD3ZYT) | 連板高度和題材熱度如何演變？ | 連板天梯、題材主線、個股明細與次日表現 |
+| [XHN-A股擇時系統](https://vicalpha.com/live/trk_01M0Z1BYTTESV4KJRNQFY17243) | 左側、同步與右側訊號何時一致？ | 綜合看板、左側抄底、同步追蹤、右側逃頂與指標體系 |
+| [逆向與反轉](https://vicalpha.com/dashboard/trk_01M67TX7K5KDJ9TM5ZESM0CR7V) | 哪些低溫行業出現拐點訊號？ | 市場溫度、產業逆向、候選榜、陷阱排雷與轉折訊號 |
+| [A 股產業鏈圖譜](https://vicalpha.com/dashboard/trk_01M1R26Z79TDB92XS5M3ZA7AMJ) | 同一條產業鏈的上下游有哪些環節？ | 按產業鏈檢視上中下游，並依環節或產品深入查看 |
+| [估值全景](https://vicalpha.com/dashboard/trk_01M6Q2NKK7Q19J7W87QZSB3FTC) | 主要指數相對自身歷史處於什麼估值位置？ | 寬基估值百分位、指數詳情、估值與報酬、結構與對照 |
+| [產業輪動](https://vicalpha.com/dashboard/trk_01M6XY338ES10G240KX1Q4KSB7) | 哪些產業正在走強？ | 涵蓋 31 個申萬一級產業的相對強弱、景氣估值、資金擁擠度與評分回測 |
 
-<table><tr><td width="50%" valign="top"><a href="images/market-temperature.png"><img src="images/market-temperature.png" alt="情緒溫度計 · 六維貢獻" width="100%"></a><br><sub>情緒溫度計 · 六維貢獻</sub></td><td width="50%" valign="top"><a href="images/timing-desk.png"><img src="images/timing-desk.png" alt="三階段擇時 · 綜合評分" width="100%"></a><br><sub>三階段擇時 · 綜合評分</sub></td></tr></table>
+<table><tr><td width="50%" valign="top"><a href="images/valuation-dark.png"><img src="images/valuation-dark.png" width="100%" alt="估值全景 · 深色"></a><br><sub>估值全景 · 深色</sub></td><td width="50%" valign="top"><a href="images/valuation-light.png"><img src="images/valuation-light.png" width="100%" alt="估值全景 · 淺色"></a><br><sub>估值全景 · 淺色</sub></td></tr></table>
+
+<table><tr><td width="50%" valign="top"><a href="images/sector-rotation-dark.png"><img src="images/sector-rotation-dark.png" width="100%" alt="產業輪動"></a><br><sub>產業輪動</sub></td><td width="50%" valign="top"><a href="images/market-temperature-dark.png"><img src="images/market-temperature-dark.png" width="100%" alt="市場狀態"></a><br><sub>市場狀態</sub></td></tr></table>
+
+<table><tr><td width="50%" valign="top"><a href="images/timing-desk-dark.png"><img src="images/timing-desk-dark.png" width="100%" alt="XHN-A股擇時系統"></a><br><sub>XHN-A股擇時系統</sub></td><td width="50%" valign="top"><a href="images/market-screen-dark.png"><img src="images/market-screen-dark.png" width="100%" alt="A 股行情"></a><br><sub>A 股行情</sub></td></tr></table>
+
+<table><tr><td width="50%" valign="top"><a href="images/industry-chain-pcb-dark.png"><img src="images/industry-chain-pcb-dark.png" width="100%" alt="PCB 產業鏈圖譜"></a><br><sub>PCB 產業鏈圖譜</sub></td><td width="50%" valign="top"><a href="images/limit-up-dark.png"><img src="images/limit-up-dark.png" width="100%" alt="短線情緒"></a><br><sub>短線情緒</sub></td></tr></table>
 
 ### 資金與交易結構
 
-| 投研台 | 研究問題 | 臺內導航與專題 |
+| 投研台 | 研究問題 | 頁面與專題 |
 | --- | --- | --- |
-| [A股資金流投研台](https://vicalpha.com/live/trk_01M0KE8SD5E4FC9TYVX82JSR05) | 如何從資金需求、供給與廣度形成日度判斷？ | 日度報告共 12 節：結論、增量、供給、方向、承接、主體、行為、廣度、趨勢、階段、交易、口徑 |
-| [A 股資金流](https://vicalpha.com/dashboard/trk_01M5MH0K50GYYV6EMYT674E7KP) | 哪些渠道和板塊的資金動向值得跟蹤？ | 總覽、主力動向、板塊跟蹤、個股熱圖、兩融槓桿、跨境資金、ETF 資金、龍虎榜、產業資本 |
-| [A 股融資融券](https://vicalpha.com/dashboard/trk_01M61AJ1TDEH04E6QTJ82DAVJQ) | 槓桿週期走到哪裡？哪些標的風險較高？ | 總覽、槓桿週期、行業兩融、個股兩融、風險監測、個股詳情 |
-| [全 A 籌碼結構](https://vicalpha.com/dashboard/trk_01M68EM7X3XGD7ZSFKGWQ0YMHR) | 不同板塊的持倉成本和獲利比例有何差異？ | 籌碼總覽、行業籌碼、籌碼篩選、個股籌碼 |
-| [A 股交易擁擠度](https://vicalpha.com/dashboard/trk_01M5NRYV1THPTBNSA5QZTZXCQC) | 擁擠集中在哪些行業、風格和個股？ | 總覽、市場擁擠、行業擁擠、行業詳情、風格擁擠、個股擁擠、個股詳情、機構持倉 |
-| [股票供給](https://vicalpha.com/dashboard/trk_01M6K5FQ4ZM6J04MDHVCFX88Z8) | 如何跟蹤發行、減持、回購與解禁壓力？ | 官網已列出；開啟後提示「該臺暫未接入」 |
-| [股票ETF資金流](https://vicalpha.com/dashboard/trk_01M6J2TE6YHG3N1M1PTQYYR80Q) | 如何觀察 ETF 淨申購與成分股被動需求？ | 官網已列出；開啟後提示「該臺暫未接入」 |
+| [A股資金流投研台](https://vicalpha.com/live/trk_01M0KE8SD5E4FC9TYVX82JSR05) | 如何從資金需求、供給與廣度形成日度判斷？ | 每日報告共 12 節，涵蓋資金增量、供給、方向、廣度、趨勢、階段、交易與統計口徑 |
+| [資金全景](https://vicalpha.com/dashboard/trk_01M5MH0K50GYYV6EMYT674E7KP) | 哪些渠道和板塊的資金動向值得跟蹤？ | 主力動向、板塊、個股熱圖、兩融、跨境、ETF、龍虎榜與產業資本 |
+| [融資融券](https://vicalpha.com/dashboard/trk_01M61AJ1TDEH04E6QTJ82DAVJQ) | 槓桿週期走到哪裡？哪些標的風險較高？ | 槓桿週期、產業與個股兩融、風險監測 |
+| [籌碼結構](https://vicalpha.com/dashboard/trk_01M68EM7X3XGD7ZSFKGWQ0YMHR) | 不同板塊的持倉成本和獲利比例有何差異？ | 獲利比例、成本集中度、產業籌碼與個股篩選 |
+| [交易擁擠度](https://vicalpha.com/dashboard/trk_01M5NRYV1THPTBNSA5QZTZXCQC) | 擁擠集中在哪些行業、風格和個股？ | 市場、產業、風格、個股擁擠度及機構持倉 |
+| [股票供給](https://vicalpha.com/dashboard/trk_01M6K5FQ4ZM6J04MDHVCFX88Z8) | 如何跟蹤發行、減持、回購與解禁壓力？ | 解禁日曆、IPO 與再融資、庫藏股、增減持及供給與報酬 |
+| [ETF資金流](https://vicalpha.com/dashboard/trk_01M6J2TE6YHG3N1M1PTQYYR80Q) | 如何觀察 ETF 淨申購與成分股被動需求？ | 寬基、產業主題、產品、產業與個股穿透及影響分析 |
+| [ETF訊號選股](https://vicalpha.com/dashboard/trk_01M6V31YYRNG05Z89N19JAP4Z3) | ETF 資金與主動買入在哪些標的上重疊？ | 個股擁擠、主動與被動資金交叉、主題輪動與主題詳情 |
 
-<table><tr><td width="50%" valign="top"><a href="images/market-monitor.png"><img src="images/market-monitor.png" alt="資金流 · 市場總覽" width="100%"></a><br><sub>資金流 · 市場總覽</sub></td><td width="50%" valign="top"><a href="images/flow-direction.png"><img src="images/flow-direction.png" alt="資金流 · 行業方向" width="100%"></a><br><sub>資金流 · 行業方向</sub></td></tr></table>
+<table><tr><td width="50%" valign="top"><a href="images/etf-selection-dark.png"><img src="images/etf-selection-dark.png" width="100%" alt="ETF訊號選股"></a><br><sub>ETF訊號選股</sub></td><td width="50%" valign="top"><a href="images/etf-flows-dark.png"><img src="images/etf-flows-dark.png" width="100%" alt="ETF資金流"></a><br><sub>ETF資金流</sub></td></tr></table>
 
-[檢視更多資金流趨勢與階段](images/flow-breadth.png)
+<table><tr><td width="50%" valign="top"><a href="images/daily-flow-dark.png"><img src="images/daily-flow-dark.png" width="100%" alt="A股資金流投研台"></a><br><sub>A股資金流投研台</sub></td><td width="50%" valign="top"><a href="images/stock-supply-dark.png"><img src="images/stock-supply-dark.png" width="100%" alt="股票供給"></a><br><sub>股票供給</sub></td></tr></table>
+
+[![資金流每日報告 · 供給與產業流向](images/flow-direction-dark.png)](images/flow-direction-dark.png)
 
 ### 機構與持倉
 
-| 投研台 | 研究問題 | 臺內導航與專題 |
+| 投研台 | 研究問題 | 頁面與專題 |
 | --- | --- | --- |
-| [公募抱團](https://vicalpha.com/dashboard/trk_01M61AH34C7CZVPRZABP2H6FNV) | 公募持倉集中在哪裡？擁擠組的表現如何？ | 抱團總覽、個股擁擠度、個股透視、基金與資金、行業與倉位、抱團指數 |
-| [A 股公募持倉](https://vicalpha.com/dashboard/trk_01M6BNGVY94CDVMMTZFJX6VPV6) | 不同基金公司怎樣配置行業和個股？ | 持倉總覽、公募排行、持倉詳情、個股持倉、行業動向、持倉熱力、公司比較 |
-| [美股 13F 機構持倉](https://vicalpha.com/dashboard/trk_01M1WKA7BJYSXWN5T2XN6EED58) | 哪些機構調整了持倉？行業分佈如何變化？ | 13F 總覽、機構排行、機構詳情、個股持倉、行業動向、持倉動向、機構對比 |
-| [國家隊全景](https://vicalpha.com/dashboard/trk_01M6FBPM1THJ7KECTFKEQB8DMB) | 國家隊透過哪些 ETF 和持股組合參與市場？ | 全景總覽、ETF 託底、持股組合、持倉全景、調倉動向、主體詳情、個股透視 |
-| [A 股十大流通股東](https://vicalpha.com/dashboard/trk_01M55196PFQ2GNCF02D9YJMPMM) | 重要股東持有哪些標的？籌碼是否更集中？ | 股東總覽、主體排行、主體詳情、個股股東、行業動向、籌碼集中度、事件訊號 |
-| [機構調研](https://vicalpha.com/dashboard/trk_01M6MGXHV4JVMCNXJPVQ0K27FG) | 哪些公司受到機構調研關注？ | 官網已列出；開啟後提示「該臺暫未接入」 |
+| [公募抱團](https://vicalpha.com/dashboard/trk_01M61AH34C7CZVPRZABP2H6FNV) | 公募持倉集中在哪裡？擁擠組的表現如何？ | 個股擁擠、基金與資金、產業持倉及抱團指數 |
+| [公募持倉](https://vicalpha.com/dashboard/trk_01M6BNGVY94CDVMMTZFJX6VPV6) | 不同基金公司怎樣配置行業和個股？ | 公募排行、個股持倉、產業動向、持倉熱圖與公司比較 |
+| [美股機構持倉](https://vicalpha.com/dashboard/trk_01M1WKA7BJYSXWN5T2XN6EED58) | 哪些機構調整了持倉？行業分佈如何變化？ | 13F 總覽、機構排行與詳情、個股持倉、產業與持倉動向、機構比較 |
+| [國家隊全景](https://vicalpha.com/dashboard/trk_01M6FBPM1THJ7KECTFKEQB8DMB) | 國家隊透過哪些 ETF 和持股組合參與市場？ | ETF 托底、持股組合、持倉全景、調倉與主體詳情 |
+| [十大流通股東](https://vicalpha.com/dashboard/trk_01M55196PFQ2GNCF02D9YJMPMM) | 重要股東持有哪些標的？籌碼是否更集中？ | 主體排行、個股股東、產業動向、籌碼集中度與事件訊號 |
+| [機構調研](https://vicalpha.com/dashboard/trk_01M6MGXHV4JVMCNXJPVQ0K27FG) | 哪些公司受到機構調研關注？ | 上市公司、機構排行、基金經理、主題洞察及訊號回測 |
 
-<table><tr><td width="50%" valign="top"><a href="images/fund-holdings.png"><img src="images/fund-holdings.png" alt="公募抱團 · 擁擠度與收益" width="100%"></a><br><sub>公募抱團 · 擁擠度與收益</sub></td><td width="50%" valign="top"><a href="images/us-holdings.png"><img src="images/us-holdings.png" alt="美股 13F · 機構持倉" width="100%"></a><br><sub>美股 13F · 機構持倉</sub></td></tr></table>
+<table><tr><td width="50%" valign="top"><a href="images/fund-holdings-dark.png"><img src="images/fund-holdings-dark.png" width="100%" alt="公募抱團"></a><br><sub>公募抱團</sub></td><td width="50%" valign="top"><a href="images/us-holdings-dark.png"><img src="images/us-holdings-dark.png" width="100%" alt="美股機構持倉"></a><br><sub>美股機構持倉</sub></td></tr></table>
 
----
+<table><tr><td width="50%" valign="top"><a href="images/institutional-research-dark.png"><img src="images/institutional-research-dark.png" width="100%" alt="機構調研"></a><br><sub>機構調研</sub></td><td width="50%" valign="top"><a href="images/desk-directory-dark.png"><img src="images/desk-directory-dark.png" width="100%" alt="投研台發現目錄"></a><br><sub>投研台發現目錄</sub></td></tr></table>
 
 <a name="strategies"></a>
 
@@ -156,28 +171,28 @@
 
 你可以從現成策略出發，再用自己的問題檢驗規則。例如：「比較低 PB 和 Piotroski F-Score：兩者怎樣選股，回撤表現有什麼差異？」
 
-官方策略庫分別提供選股和擇時策略。開啟報告可以檢視規則、歷史收益與回撤，也可以**克隆策略繼續研究**。下表列出八個示例。
+截至 2026 年 11 月 13 日，公共策略庫有 **26 個選股策略**和 **30 個擇時策略**。卡片可預覽回測表現分布，開啟報告可查看規則、歷史報酬與回撤，也可複製策略繼續研究。下表列出八個範例。
 
 [**瀏覽公共策略庫 ↗**](https://vicalpha.com/strategies)
 
-[![策略中心 · 官方策略與分類](images/strategy-center.png)](images/strategy-center.png)
+[![公共策略庫](images/strategy-center-dark.png)](images/strategy-center-dark.png)
 
 | 型別 | 策略 | 規則 | 歷史回測 |
 | --- | --- | --- | --- |
-| 選股 · 價值 | 低 PB | 按賬面價值相對市值篩選股票。 | [![低 PB回測表現](images/report-low-pb.png)](images/report-low-pb.png) |
-| 選股 · 質量 | Piotroski F-Score | 用九項財務訊號衡量公司質量。 | [![Piotroski F-Score回測表現](images/report-f-score.png)](images/report-f-score.png) |
-| 選股 · 價值 | 聶夫總回報 | 結合低市盈率、適度增長和分紅篩選公司。 | [![聶夫總回報回測表現](images/report-neff.png)](images/report-neff.png) |
-| 選股 · 資金流 | 基金持倉增持 | 關注公募持倉佔比連續兩個報告期上升的公司。 | [![基金持倉增持回測表現](images/report-fund-increase.png)](images/report-fund-increase.png) |
-| 擇時 · 複合 | 赫爾均線趨勢 | 觀察赫爾均線相對前值的升降。 | [![赫爾均線趨勢回測表現](images/report-hull.png)](images/report-hull.png) |
-| 擇時 · 趨勢跟蹤 | 指數均線金叉 | 以短期與長期指數移動平均線的交叉跟蹤趨勢。 | [![指數均線金叉回測表現](images/report-ema.png)](images/report-ema.png) |
-| 擇時 · 趨勢跟蹤 | 半趨勢通道翻轉 | 用高低價格的平滑通道識別多空轉換。 | [![半趨勢通道翻轉回測表現](images/report-halftrend.png)](images/report-halftrend.png) |
-| 擇時 · 趨勢跟蹤 | SuperTrend 趨勢線 | 觀察價格穿越基於 ATR 的軌道時，趨勢方向是否翻轉。 | [![SuperTrend 趨勢線回測表現](images/report-supertrend.png)](images/report-supertrend.png) |
+| 選股 · 價值 | 低 PB | 按賬面價值相對市值篩選股票。 | [![低 PB回測表現](images/report-low-pb-dark.png)](images/report-low-pb-dark.png) |
+| 選股 · 質量 | Piotroski F-Score | 用九項財務訊號衡量公司質量。 | [![Piotroski F-Score回測表現](images/report-f-score-dark.png)](images/report-f-score-dark.png) |
+| 選股 · 價值 | 聶夫總回報 | 結合低市盈率、適度增長和分紅篩選公司。 | [![聶夫總回報回測表現](images/report-neff-dark.png)](images/report-neff-dark.png) |
+| 選股 · 資金流 | 基金持倉增持 | 關注公募持倉佔比連續兩個報告期上升的公司。 | [![基金持倉增持回測表現](images/report-fund-increase-dark.png)](images/report-fund-increase-dark.png) |
+| 擇時 · 複合 | 赫爾均線趨勢 | 觀察赫爾均線相對前值的升降。 | [![赫爾均線趨勢回測表現](images/report-hull-dark.png)](images/report-hull-dark.png) |
+| 擇時 · 趨勢跟蹤 | 指數均線金叉 | 以短期與長期指數移動平均線的交叉跟蹤趨勢。 | [![指數均線金叉回測表現](images/report-ema-dark.png)](images/report-ema-dark.png) |
+| 擇時 · 趨勢跟蹤 | 半趨勢通道翻轉 | 用高低價格的平滑通道識別多空轉換。 | [![半趨勢通道翻轉回測表現](images/report-halftrend-dark.png)](images/report-halftrend-dark.png) |
+| 擇時 · 趨勢跟蹤 | SuperTrend 趨勢線 | 觀察價格穿越基於 ATR 的軌道時，趨勢方向是否翻轉。 | [![SuperTrend 趨勢線回測表現](images/report-supertrend-dark.png)](images/report-supertrend-dark.png) |
 
-**歷史回測精選**　按上表四個選股示例與四個擇時示例各自的年化收益，分別選取低 PB（**16.0%，最大回撤 17.4%**）與赫爾均線趨勢（**19.1%，最大回撤 25.7%**）。低 PB 是組合收益，赫爾均線報告展示 100 個標的的均值；兩者統計口徑不同。
+**歷史回測精選**　按表中四個選股範例、四個擇時範例各自的年化報酬選取低 PB（**16.6%，最大回撤 17.4%**）與赫爾均線趨勢（**19.3%，最大回撤 25.7%**）。前者是組合回測，後者是 100 個標的的平均值。數值來自 2026 年 11 月 13 日查看的歷史回測報告。
 
-[![低 PB · 收益、風險與淨值走勢](images/report-low-pb.png)](images/report-low-pb.png)
+[![低 PB · 收益、風險與淨值走勢](images/report-low-pb-dark.png)](images/report-low-pb-dark.png)
 
-[![赫爾均線趨勢 · 總體與分組表現](images/report-hull.png)](images/report-hull.png)
+[![赫爾均線趨勢 · 總體與分組表現](images/report-hull-dark.png)](images/report-hull-dark.png)
 
 
 <a name="equities"></a>
@@ -190,13 +205,15 @@
 
 [**開始個股研究與跟蹤 ↗**](https://vicalpha.com/stock/600519.SH)
 
+新版自選分為 **看盤、總覽、風險與歸因** 三個頁面。進入個股詳情，可查看估值、財務與公司事件。 [開啟自選 ↗](https://vicalpha.com/watchlist)
+
 | 觀察維度 | 可用工具 |
 | --- | --- |
 | 公司研究 | 財務、估值、研報與預期、股東及機構持倉。 |
 | 價格與趨勢 | K 線、均線、布林帶及復權切換。 |
 | 量能與動量 | 成交量、MACD、KDJ 和 RSI 等指標。 |
 
-[![貴州茅臺 · 個股研究與跟蹤完整頁面](images/stock-page.png)](images/stock-page.png)
+[![貴州茅台個股研究](images/stock-page-dark.png)](images/stock-page-dark.png)
 
 <a name="signals"></a>
 
@@ -213,7 +230,9 @@
 | 訊號來源 | 策略、技術、形態、量價、資金、事件。 |
 | 閱讀方式 | 按方向與強度篩選，按股票合併或逐條檢視。 |
 
-[![實時訊號 · 滬深 300 訊號流與篩選完整頁面](images/signal-page.png)](images/signal-page.png)
+訊號頁支援從自選、寬基指數和產業選擇股票池。可查看當日、5 日、20 日或 60 日內的訊號，並切換訊號流、列表或熱圖。截圖選用滬深 300 股票池。
+
+[![滬深 300 訊號流](images/signal-page-dark.png)](images/signal-page-dark.png)
 
 <a name="tasks"></a>
 
@@ -231,7 +250,7 @@
 | 執行頻率 | 單次、每天、每個交易日、每週、每月或自定義。 |
 | 執行狀態 | 啟用、已暫停、異常、已停止。 |
 
-[![定時研究任務 · 新建入口、頻率與任務狀態](images/jobs-page.png)](images/jobs-page.png)
+[![定時研究任務中心](images/jobs-page-dark.png)](images/jobs-page-dark.png)
 
 [開啟 VicAlpha，開始研究 ↗](https://vicalpha.com/)
 

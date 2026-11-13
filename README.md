@@ -1,4 +1,4 @@
-[![VicAlpha research desks](images/desk-highlights.png)](https://vicalpha.com/)
+[![VicAlpha workspace with dark valuation and sector rotation desks](images/desk-highlights.png)](https://vicalpha.com/)
 
 <h1 align="center">VicAlpha · AI-Native Investment Research</h1>
 
@@ -23,7 +23,7 @@ The **multi-market database** covers US, Hong Kong and mainland China equities, 
 | 🔎 Research | 📊 Strategy development | 📡 Monitoring |
 | --- | --- | --- |
 | **15 research Skills** · Company, financial, market and flow analysis | **Natural-language strategies** · Define selection and timing rules and backtest them | **Live signals** · Filter by direction, strength and event |
-| **19 desk entries** · Build or explore thematic workspaces | **Public strategies** · Inspect rules, NAV, drawdowns and groups | **Scheduled research** · Run on trading days or a custom schedule |
+| **22 desk entries** · Build or explore thematic workspaces | **Public strategies** · Inspect rules, NAV, drawdowns and groups | **Scheduled research** · Run on trading days or a custom schedule |
 
 <a name="architecture"></a>
 
@@ -50,7 +50,9 @@ Browse market reviews, industry-chain reports and strategy research in the plaza
 | Research plaza | Discover published research by artifact type. |
 | Workspace | Develop a hypothesis and revisit the discussion behind a result. |
 
-<table><tr><td width="50%" valign="top"><a href="images/research-plaza.png"><img src="images/research-plaza.png" width="100%" alt="Discover published research"></a><br><sub>Discover published research</sub></td><td width="50%" valign="top"><a href="images/workspace.png"><img src="images/workspace.png" width="100%" alt="Start a research conversation"></a><br><sub>Start a research conversation</sub></td></tr></table>
+The plaza separates official boards from community reports and strategies. Browse by category or search, then return to the workspace to ask a follow-up question.
+
+<table><tr><td width="50%" valign="top"><a href="images/research-plaza-dark.png"><img src="images/research-plaza-dark.png" width="100%" alt="Official boards in the research plaza"></a><br><sub>Official boards in the research plaza</sub></td><td width="50%" valign="top"><a href="images/workspace-dark.png"><img src="images/workspace-dark.png" width="100%" alt="Natural-language research workspace"></a><br><sub>Natural-language research workspace</sub></td></tr></table>
 
 <a name="skills"></a>
 
@@ -67,7 +69,9 @@ Choose from **15 official templates**, then specify the security, reporting peri
 | Capital flows | 3 | Flows, state-backed investors and exchange trading disclosures. |
 | Research desks | 2 | Ongoing investigation of a theme. |
 
-[![Official Skills and example questions](images/skills-library.png)](images/skills-library.png)
+Alongside the 15 official templates, you can import your own Skill from a ZIP, Markdown or text file up to 1 MB, or paste the research method directly.
+
+<table><tr><td width="50%" valign="top"><a href="images/skills-library-dark.png"><img src="images/skills-library-dark.png" width="100%" alt="Official Skills library"></a><br><sub>Official Skills library</sub></td><td width="50%" valign="top"><a href="images/skill-import-dark.png"><img src="images/skill-import-dark.png" width="100%" alt="Import a Skill"></a><br><sub>Import a Skill</sub></td></tr></table>
 
 <a name="desks"></a>
 
@@ -75,7 +79,7 @@ Choose from **15 official templates**, then specify the security, reporting peri
 
 Build a desk by describing the question, indicators and signals you want to follow. For example, “Build a sector-rotation desk with market breadth, industry flows and timing signals.”
 
-You can also open a ready-made desk in the [research plaza](https://vicalpha.com/plaza). The discovery directory listed **19 desks** on 5 November 2026. Names below link directly to the platform. Some require sign-in.
+The [research desk directory](https://vicalpha.com/tracker) listed **22 desks** on 13 November 2026. Its cards show previews and update status, with topic filters for browsing. Desk links below may require sign-in. The gallery uses the platform’s dark theme, with the valuation desk shown in both themes.
 
 [**Build your first research desk ↗**](https://vicalpha.com/tracker)
 
@@ -83,43 +87,56 @@ You can also open a ready-made desk in the [research plaza](https://vicalpha.com
 
 | Research desk | Research question | Views and topics |
 | --- | --- | --- |
-| [A-share market screen](https://vicalpha.com/dashboard/trk_01M544AT6G7NJDN1DGTHD3TZWJ) | Which sectors drive the market? | Prices, sentiment, sectors, flows, exchange trading disclosures |
-| [Sentiment thermometer](https://vicalpha.com/dashboard/trk_01M6GATFGCSW9T3W052JCYZP3D) | How hot or cold is the market? | Overview, dimensions, indicators, signal events, historical reviews |
-| [Limit-up monitor](https://vicalpha.com/dashboard/trk_01M652CD3DX0AXP42X0KFD3ZYT) | Which themes sustain consecutive limit-up moves? | Sentiment, streak ladder, themes, stocks, next-day outcomes |
-| [XHN A-share timing](https://vicalpha.com/live/trk_01M0Z1BYTTESV4KJRNQFY17243) | When do early, concurrent and exit signals agree? | Overview, early entries, trend tracking, exits, methodology, indicators |
-| [Contrarian investing](https://vicalpha.com/dashboard/trk_01M67TX7K5KDJ9TM5ZESM0CR7V) | Where is weak sentiment turning? | Overview, market temperature, sectors, candidates, traps, turning points |
-| [A-share industry chains](https://vicalpha.com/dashboard/trk_01M1R26Z79TDB92XS5M3ZA7AMJ) | How do suppliers and customers fit together? | Choose a chain and explore upstream, midstream and downstream products |
+| [A-share market](https://vicalpha.com/dashboard/trk_01M544AT6G7NJDN1DGTHD3TZWJ) | Which sectors drive the market? | Prices, sentiment, sectors, flows and exchange trading disclosures |
+| [Market state](https://vicalpha.com/dashboard/trk_01M6GATFGCSW9T3W052JCYZP3D) | How hot or cold is the market? | Composite market temperature, dimension breakdown, indicators and signal history |
+| [Short-term sentiment](https://vicalpha.com/dashboard/trk_01M652CD3DX0AXP42X0KFD3ZYT) | Which themes sustain consecutive limit-up moves? | Limit-up streaks, leading themes, individual stocks and next-day performance |
+| [XHN A-share timing](https://vicalpha.com/live/trk_01M0Z1BYTTESV4KJRNQFY17243) | When do early, concurrent and exit signals agree? | Early, concurrent and exit signals, methodology and indicator definitions |
+| [Contrarian and reversal](https://vicalpha.com/dashboard/trk_01M67TX7K5KDJ9TM5ZESM0CR7V) | Where is weak sentiment turning? | Market temperature, contrarian sectors, candidates, risk screens and turning-point signals |
+| [A-share industry chains](https://vicalpha.com/dashboard/trk_01M1R26Z79TDB92XS5M3ZA7AMJ) | How do suppliers and customers fit together? | Upstream, midstream and downstream views by industry chain and product |
+| [Valuation overview](https://vicalpha.com/dashboard/trk_01M6Q2NKK7Q19J7W87QZSB3FTC) | How do major indices compare with their own valuation history? | Index valuation percentiles, individual index views, valuation versus returns and cross-index comparisons |
+| [Sector rotation](https://vicalpha.com/dashboard/trk_01M6XY338ES10G240KX1Q4KSB7) | Which sectors are gaining strength? | Relative strength, fundamentals and valuation, flows and crowding, and score backtests across 31 SW Level 1 sectors |
 
-<table><tr><td width="50%" valign="top"><a href="images/market-temperature.png"><img src="images/market-temperature.png" width="100%" alt="Market temperature"></a><br><sub>Market temperature</sub></td><td width="50%" valign="top"><a href="images/timing-desk.png"><img src="images/timing-desk.png" width="100%" alt="Timing scores"></a><br><sub>Timing scores</sub></td></tr></table>
+<table><tr><td width="50%" valign="top"><a href="images/valuation-dark.png"><img src="images/valuation-dark.png" width="100%" alt="Valuation overview · Dark"></a><br><sub>Valuation overview · Dark</sub></td><td width="50%" valign="top"><a href="images/valuation-light.png"><img src="images/valuation-light.png" width="100%" alt="Valuation overview · Light"></a><br><sub>Valuation overview · Light</sub></td></tr></table>
+
+<table><tr><td width="50%" valign="top"><a href="images/sector-rotation-dark.png"><img src="images/sector-rotation-dark.png" width="100%" alt="Sector rotation"></a><br><sub>Sector rotation</sub></td><td width="50%" valign="top"><a href="images/market-temperature-dark.png"><img src="images/market-temperature-dark.png" width="100%" alt="Market state"></a><br><sub>Market state</sub></td></tr></table>
+
+<table><tr><td width="50%" valign="top"><a href="images/timing-desk-dark.png"><img src="images/timing-desk-dark.png" width="100%" alt="XHN A-share timing"></a><br><sub>XHN A-share timing</sub></td><td width="50%" valign="top"><a href="images/market-screen-dark.png"><img src="images/market-screen-dark.png" width="100%" alt="A-share market"></a><br><sub>A-share market</sub></td></tr></table>
+
+<table><tr><td width="50%" valign="top"><a href="images/industry-chain-pcb-dark.png"><img src="images/industry-chain-pcb-dark.png" width="100%" alt="PCB industry chain"></a><br><sub>PCB industry chain</sub></td><td width="50%" valign="top"><a href="images/limit-up-dark.png"><img src="images/limit-up-dark.png" width="100%" alt="Short-term sentiment"></a><br><sub>Short-term sentiment</sub></td></tr></table>
 
 ### Flows and trading structure
 
 | Research desk | Research question | Views and topics |
 | --- | --- | --- |
-| [Daily A-share flow report](https://vicalpha.com/live/trk_01M0KE8SD5E4FC9TYVX82JSR05) | How do supply, demand and breadth interact? | 12 report sections covering conclusions, new demand, supply, direction, absorption, participants, behavior, breadth, trends, phases, trading and definitions |
-| [A-share capital flows](https://vicalpha.com/dashboard/trk_01M5MH0K50GYYV6EMYT674E7KP) | Which channels and sectors drive flows? | Overview, large trades, sectors, stock heatmap, margin, cross-border flows, ETFs, exchange disclosures, corporate activity |
-| [A-share margin financing](https://vicalpha.com/dashboard/trk_01M61AJ1TDEH04E6QTJ82DAVJQ) | Where is leverage building? | Overview, leverage cycle, industry and stock financing, risk monitoring, stock detail |
-| [A-share cost basis](https://vicalpha.com/dashboard/trk_01M68EM7X3XGD7ZSFKGWQ0YMHR) | How do investor costs vary across sectors? | Market overview, sector costs, screening, stock detail |
-| [A-share trading crowding](https://vicalpha.com/dashboard/trk_01M5NRYV1THPTBNSA5QZTZXCQC) | Which trades are most crowded? | Market, industries, styles, stocks, institutional holdings and detail views |
-| [Equity supply](https://vicalpha.com/dashboard/trk_01M6K5FQ4ZM6J04MDHVCFX88Z8) | How do issuance, disposals and buybacks affect supply? | Listed in discovery. The platform currently marks this desk as unavailable. |
-| [Equity ETF flows](https://vicalpha.com/dashboard/trk_01M6J2TE6YHG3N1M1PTQYYR80Q) | How do ETF subscriptions affect constituent demand? | Listed in discovery. The platform currently marks this desk as unavailable. |
+| [Daily A-share flow report](https://vicalpha.com/live/trk_01M0KE8SD5E4FC9TYVX82JSR05) | How do supply, demand and breadth interact? | 12 sections on demand, supply, direction, market breadth, trends, phases, trades and methodology |
+| [Capital flows overview](https://vicalpha.com/dashboard/trk_01M5MH0K50GYYV6EMYT674E7KP) | Which channels and sectors drive flows? | Large orders, sectors, stock heatmap, leverage, cross-border and ETF flows, exchange disclosures and corporate activity |
+| [Margin financing and securities lending](https://vicalpha.com/dashboard/trk_01M61AJ1TDEH04E6QTJ82DAVJQ) | Where is leverage building? | Leverage cycle, sector and stock financing, and risk monitoring |
+| [Position cost structure](https://vicalpha.com/dashboard/trk_01M68EM7X3XGD7ZSFKGWQ0YMHR) | How do investor costs vary across sectors? | Profit and loss distribution, cost concentration, sector views and stock screening |
+| [Trading crowding](https://vicalpha.com/dashboard/trk_01M5NRYV1THPTBNSA5QZTZXCQC) | Which trades are most crowded? | Crowding across markets, sectors, styles, individual stocks and institutional holdings |
+| [Equity supply](https://vicalpha.com/dashboard/trk_01M6K5FQ4ZM6J04MDHVCFX88Z8) | How do issuance, disposals and buybacks affect supply? | Unlock calendar, issuance and refinancing, buybacks, shareholder changes and supply versus returns |
+| [ETF flows](https://vicalpha.com/dashboard/trk_01M6J2TE6YHG3N1M1PTQYYR80Q) | How do ETF subscriptions affect constituent demand? | Broad-market and thematic flows, product views, sector and stock look-through, and impact analysis |
+| [ETF signals for stock selection](https://vicalpha.com/dashboard/trk_01M6V31YYRNG05Z89N19JAP4Z3) | Where do ETF flows and active buying overlap? | ETF crowding, active versus passive flow signals, thematic rotation and theme details |
 
-<table><tr><td width="50%" valign="top"><a href="images/market-monitor.png"><img src="images/market-monitor.png" width="100%" alt="Daily flow overview"></a><br><sub>Daily flow overview</sub></td><td width="50%" valign="top"><a href="images/flow-direction.png"><img src="images/flow-direction.png" width="100%" alt="Sector flows"></a><br><sub>Sector flows</sub></td></tr></table>
+<table><tr><td width="50%" valign="top"><a href="images/etf-selection-dark.png"><img src="images/etf-selection-dark.png" width="100%" alt="ETF signals for stock selection"></a><br><sub>ETF signals for stock selection</sub></td><td width="50%" valign="top"><a href="images/etf-flows-dark.png"><img src="images/etf-flows-dark.png" width="100%" alt="ETF flows"></a><br><sub>ETF flows</sub></td></tr></table>
 
-[View flow trends and market phases](images/flow-breadth.png)
+<table><tr><td width="50%" valign="top"><a href="images/daily-flow-dark.png"><img src="images/daily-flow-dark.png" width="100%" alt="Daily A-share flow report"></a><br><sub>Daily A-share flow report</sub></td><td width="50%" valign="top"><a href="images/stock-supply-dark.png"><img src="images/stock-supply-dark.png" width="100%" alt="Equity supply"></a><br><sub>Equity supply</sub></td></tr></table>
+
+[![Daily flow report · Supply and sector flows](images/flow-direction-dark.png)](images/flow-direction-dark.png)
 
 ### Institutions and holdings
 
 | Research desk | Research question | Views and topics |
 | --- | --- | --- |
-| [Fund crowding](https://vicalpha.com/dashboard/trk_01M61AH34C7CZVPRZABP2H6FNV) | How concentrated are fund holdings? | Overview, stock crowding, stock detail, fund flows, sector allocations, crowding index |
-| [A-share mutual fund holdings](https://vicalpha.com/dashboard/trk_01M6BNGVY94CDVMMTZFJX6VPV6) | How do managers allocate across sectors? | Overview, manager rankings, fund and stock holdings, sectors, heatmap, manager comparison |
-| [US institutional holdings (13F)](https://vicalpha.com/dashboard/trk_01M1WKA7BJYSXWN5T2XN6EED58) | Which institutions changed positions? | Overview, institution rankings and profiles, stocks, sectors, position changes, institution comparison |
-| [State-backed investors](https://vicalpha.com/dashboard/trk_01M6FBPM1THJ7KECTFKEQB8DMB) | How do ETFs and equity portfolios contribute? | Overview, ETF support, portfolios, holdings, allocation changes, investor and stock detail |
-| [Top ten tradable shareholders](https://vicalpha.com/dashboard/trk_01M55196PFQ2GNCF02D9YJMPMM) | Who owns the float and how concentrated is it? | Overview, investor rankings and profiles, stock ownership, sectors, concentration and events |
-| [Institutional research visits](https://vicalpha.com/dashboard/trk_01M6MGXHV4JVMCNXJPVQ0K27FG) | Which companies attract institutional interest? | Listed in discovery. The platform currently marks this desk as unavailable. |
+| [Mutual fund crowding](https://vicalpha.com/dashboard/trk_01M61AH34C7CZVPRZABP2H6FNV) | How concentrated are fund holdings? | Stock crowding, fund flows, sector allocations and crowding index |
+| [Mutual fund holdings](https://vicalpha.com/dashboard/trk_01M6BNGVY94CDVMMTZFJX6VPV6) | How do managers allocate across sectors? | Fund rankings, stock holdings, sector allocation, holdings heatmap and fund-company comparison |
+| [US institutional holdings (13F)](https://vicalpha.com/dashboard/trk_01M1WKA7BJYSXWN5T2XN6EED58) | Which institutions changed positions? | Institution rankings and profiles, stock holdings, sector moves and institution comparison |
+| [State-backed investors](https://vicalpha.com/dashboard/trk_01M6FBPM1THJ7KECTFKEQB8DMB) | How do ETFs and equity portfolios contribute? | ETF support, equity portfolios, holdings and position changes by investor |
+| [Top ten tradable shareholders](https://vicalpha.com/dashboard/trk_01M55196PFQ2GNCF02D9YJMPMM) | Who owns the float and how concentrated is it? | Shareholder rankings, holdings by stock, sector shifts and ownership concentration |
+| [Institutional research visits](https://vicalpha.com/dashboard/trk_01M6MGXHV4JVMCNXJPVQ0K27FG) | Which companies attract institutional interest? | Visited companies, institution rankings, manager activity, themes and signal backtests |
 
-<table><tr><td width="50%" valign="top"><a href="images/fund-holdings.png"><img src="images/fund-holdings.png" width="100%" alt="Fund holdings and crowding"></a><br><sub>Fund holdings and crowding</sub></td><td width="50%" valign="top"><a href="images/us-holdings.png"><img src="images/us-holdings.png" width="100%" alt="Quarterly 13F holdings"></a><br><sub>Quarterly 13F holdings</sub></td></tr></table>
+<table><tr><td width="50%" valign="top"><a href="images/fund-holdings-dark.png"><img src="images/fund-holdings-dark.png" width="100%" alt="Mutual fund crowding"></a><br><sub>Mutual fund crowding</sub></td><td width="50%" valign="top"><a href="images/us-holdings-dark.png"><img src="images/us-holdings-dark.png" width="100%" alt="US institutional holdings"></a><br><sub>US institutional holdings</sub></td></tr></table>
+
+<table><tr><td width="50%" valign="top"><a href="images/institutional-research-dark.png"><img src="images/institutional-research-dark.png" width="100%" alt="Institutional research visits"></a><br><sub>Institutional research visits</sub></td><td width="50%" valign="top"><a href="images/desk-directory-dark.png"><img src="images/desk-directory-dark.png" width="100%" alt="Research desk discovery"></a><br><sub>Research desk discovery</sub></td></tr></table>
 
 <a name="strategies"></a>
 
@@ -146,28 +163,28 @@ Specify the universe, benchmark, rules and parameters in plain language. For exa
 
 ### Public strategies
 
-Use a public strategy as a starting point. Inspect its rules and historical report, or clone it for further research. For example, compare low price-to-book with the Piotroski F-Score and investigate how their drawdowns differ.
+The public strategy center lists **26 stock-selection strategies** and **30 timing strategies** as of 13 November 2026. Strategy cards preview performance distributions. Open a report for rules, returns and drawdowns, or clone the strategy for further research. Eight examples follow.
 
 [**Explore the public strategy library ↗**](https://vicalpha.com/strategies)
 
-[![Strategy center and official categories](images/strategy-center.png)](images/strategy-center.png)
+[![Public strategy library](images/strategy-center-dark.png)](images/strategy-center-dark.png)
 
 | Type | Strategy | Rule | Historical report |
 | --- | --- | --- | --- |
-| Selection · Value | Low price-to-book | Screen for book value relative to market price. | [![Low price-to-book backtest](images/report-low-pb.png)](images/report-low-pb.png) |
-| Selection · Quality | Piotroski F-Score | Score financial strength using nine accounting signals. | [![Piotroski F-Score backtest](images/report-f-score.png)](images/report-f-score.png) |
-| Selection · Value | Neff total return | Combine low earnings multiples, moderate growth and dividends. | [![Neff total return backtest](images/report-neff.png)](images/report-neff.png) |
-| Selection · Flows | Increasing fund ownership | Find companies with rising fund ownership for two reporting periods. | [![Increasing fund ownership backtest](images/report-fund-increase.png)](images/report-fund-increase.png) |
-| Timing · Composite | Hull moving-average trend | Track changes in the direction of a smoothed Hull average. | [![Hull moving-average trend backtest](images/report-hull.png)](images/report-hull.png) |
-| Timing · Trend | EMA crossover | Follow crossings of short and long exponential moving averages. | [![EMA crossover backtest](images/report-ema.png)](images/report-ema.png) |
-| Timing · Trend | HalfTrend channel reversal | Identify reversals using a smoothed high-low channel. | [![HalfTrend channel reversal backtest](images/report-halftrend.png)](images/report-halftrend.png) |
-| Timing · Trend | SuperTrend | Track trend flips at ATR-based price bands. | [![SuperTrend backtest](images/report-supertrend.png)](images/report-supertrend.png) |
+| Selection · Value | Low price-to-book | Screen for book value relative to market price. | [![Low price-to-book backtest](images/report-low-pb-dark.png)](images/report-low-pb-dark.png) |
+| Selection · Quality | Piotroski F-Score | Score financial strength using nine accounting signals. | [![Piotroski F-Score backtest](images/report-f-score-dark.png)](images/report-f-score-dark.png) |
+| Selection · Value | Neff total return | Combine low earnings multiples, moderate growth and dividends. | [![Neff total return backtest](images/report-neff-dark.png)](images/report-neff-dark.png) |
+| Selection · Flows | Increasing fund ownership | Find companies with rising fund ownership for two reporting periods. | [![Increasing fund ownership backtest](images/report-fund-increase-dark.png)](images/report-fund-increase-dark.png) |
+| Timing · Composite | Hull moving-average trend | Track changes in the direction of a smoothed Hull average. | [![Hull moving-average trend backtest](images/report-hull-dark.png)](images/report-hull-dark.png) |
+| Timing · Trend | EMA crossover | Follow crossings of short and long exponential moving averages. | [![EMA crossover backtest](images/report-ema-dark.png)](images/report-ema-dark.png) |
+| Timing · Trend | HalfTrend channel reversal | Identify reversals using a smoothed high-low channel. | [![HalfTrend channel reversal backtest](images/report-halftrend-dark.png)](images/report-halftrend-dark.png) |
+| Timing · Trend | SuperTrend | Track trend flips at ATR-based price bands. | [![SuperTrend backtest](images/report-supertrend-dark.png)](images/report-supertrend-dark.png) |
 
-**Selected historical results.** Of the four examples shown in each category, low P/B led stock selection by annualized return (**16.0%, maximum drawdown 17.4%**). Hull trend led timing (**19.1%, maximum drawdown 25.7%**). The first is a portfolio result; the second averages 100 securities.
+**Selected historical backtests.** Of the four examples shown in each category, low P/B led stock selection by annualized return (**16.6%, maximum drawdown 17.4%**). Hull trend led timing (**19.3%, maximum drawdown 25.7%**). The first is a portfolio result. The second averages 100 securities. The figures are historical backtest results from the reports viewed on 13 November 2026.
 
-[![Low P/B portfolio and benchmark performance](images/report-low-pb.png)](images/report-low-pb.png)
+[![Low P/B portfolio and benchmark performance](images/report-low-pb-dark.png)](images/report-low-pb-dark.png)
 
-[![Hull trend aggregate and grouped performance](images/report-hull.png)](images/report-hull.png)
+[![Hull trend aggregate and grouped performance](images/report-hull-dark.png)](images/report-hull-dark.png)
 
 <a name="equities"></a>
 
@@ -177,13 +194,15 @@ Compare stock performance with the underlying business. For example, “Did earn
 
 [**Explore a stock research page ↗**](https://vicalpha.com/stock/600519.SH)
 
+The watchlist offers three views: **Market**, **Overview**, and **Risk and attribution**. Open an individual stock to check valuation, financials, and company events. [Open the watchlist ↗](https://vicalpha.com/watchlist)
+
 | View | Tools |
 | --- | --- |
 | Company research | Financials, valuation, analyst expectations, shareholders, institutional ownership and events. |
 | Price and trend | Candlesticks, moving averages, Bollinger bands and price adjustments. |
 | Volume and momentum | Volume, MACD, KDJ and RSI. |
 
-[![Full company research page for Kweichow Moutai](images/stock-page.png)](images/stock-page.png)
+[![Kweichow Moutai equity research](images/stock-page-dark.png)](images/stock-page-dark.png)
 
 <a name="signals"></a>
 
@@ -198,7 +217,9 @@ Define a condition in natural language, such as “Alert me when a stock on my w
 | Signal source | Strategy, technicals, patterns, price and volume, capital flows and events. |
 | Display | Filter by direction and strength, group by security, or switch between feed, list and heatmap. |
 
-[![Full CSI 300 signal feed and filters](images/signal-page.png)](images/signal-page.png)
+The signal page supports watchlist, benchmark index and industry pools. Choose the current day or a 5-, 20- or 60-day window, then browse the feed, list or heatmap. The screenshot uses the CSI 300 pool.
+
+[![CSI 300 signal feed](images/signal-page-dark.png)](images/signal-page-dark.png)
 
 <a name="tasks"></a>
 
@@ -214,7 +235,7 @@ Turn a recurring question into a task. Try “After each trading session, review
 | Frequency | Once, daily, each trading day, weekly, monthly or custom. |
 | Status | Enabled, paused, failed or stopped. |
 
-[![Full task center showing scheduling and status filters](images/jobs-page.png)](images/jobs-page.png)
+[![Scheduled research task center](images/jobs-page-dark.png)](images/jobs-page-dark.png)
 
 [Open VicAlpha ↗](https://vicalpha.com/)
 
