@@ -234,3 +234,11 @@
 [![定時研究任務 · 新建入口、頻率與任務狀態](images/jobs-page.png)](images/jobs-page.png)
 
 [開啟 VicAlpha，開始研究 ↗](https://vicalpha.com/)
+
+<a name="contact"></a>
+
+## 💬 聯絡方式
+
+開啟 WeChat 掃描 QR Code，即可聯絡 VicAlpha。
+
+<a href="images/wechat-contact.png"><img src="images/wechat-contact.png" alt="VicAlpha WeChat 聯絡 QR Code" width="240" height="240"></a>

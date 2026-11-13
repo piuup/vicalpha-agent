@@ -234,3 +234,11 @@
 [![定时研究任务 · 新建入口、频率与任务状态](images/jobs-page.png)](images/jobs-page.png)
 
 [打开 VicAlpha，开始研究 ↗](https://vicalpha.com/)
+
+<a name="contact"></a>
+
+## 💬 联系方式
+
+打开微信扫一扫，联系 VicAlpha。
+
+<a href="images/wechat-contact.png"><img src="images/wechat-contact.png" alt="VicAlpha 微信联系二维码" width="240" height="240"></a>

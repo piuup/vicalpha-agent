@@ -217,3 +217,11 @@ Turn a recurring question into a task. Try “After each trading session, review
 [![Full task center showing scheduling and status filters](images/jobs-page.png)](images/jobs-page.png)
 
 [Open VicAlpha ↗](https://vicalpha.com/)
+
+<a name="contact"></a>
+
+## 💬 Contact
+
+Scan the QR code in WeChat to contact VicAlpha.
+
+<a href="images/wechat-contact.png"><img src="images/wechat-contact.png" alt="VicAlpha WeChat contact QR code" width="240" height="240"></a>
